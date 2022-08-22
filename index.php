@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <img src="./static/img/under-construction.png" class="under-construction-badge" />
+    <!-- Construction badge: <img src="./static/img/under-construction.png" class="under-construction-badge" /> -->
     <center>
         <div id="header">
             <img src="./static/img/tunnaduong.png" alt="Tunna Duong logo" class="logo">
@@ -26,13 +26,15 @@
         <div class="overlay-below"></div>
         <div id="myNav" class="overlay">
             <!-- Overlay content -->
-            <div class="overlay-content">
+            <div class="filter"></div>
+            <div class="overlay-content push-up">
                 <a href="#">Giới thiệu</a>
-                <a href="#">Những thứ mình làm</a>
+                <a href="https://cv.tunnaduong.com">Những thứ mình làm</a>
                 <a href="#">Kết nối với mình</a>
                 <a href="#">Viết cho mình</a>
                 <a href="#">Báo lỗi</a>
                 <a href="#">Ủng hộ</a>
+                <span class="version-number">Last updated: v2022.08.22</span>
             </div>
         </div>
         <div class="menu-button-container" onclick="toggleNav()">

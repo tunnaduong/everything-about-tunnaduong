@@ -25,6 +25,7 @@ function toggleNav() {
   $("#myNav").toggleClass("full-height");
   $(".overlay-below").toggleClass("full-height");
   $(".menu-button-container").toggleClass("menu-active");
+  $(".overlay-content").toggleClass("push-up");
 }
 
 $("#typed").typed({
