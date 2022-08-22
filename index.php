@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="content--card card--people">
-                    <img src="./static//img/people/buihien.png" alt="Bùi Thu Hiền">
+                    <img src="./static/img/people/buihien.png" alt="Bùi Thu Hiền">
                     <div>
                         <p class="people--name">Bùi Thu Hiền</p>
                         <p class="people--review">Chúc đỗ nguyện vọng mong ước, luôn dui dẻ, hạnh phúc với những quyết
