@@ -34,7 +34,7 @@
                 <a href="#">Viết cho mình</a>
                 <a href="#">Báo lỗi</a>
                 <a href="#">Ủng hộ</a>
-                <span class="version-number">Last updated: v2022.08.22</span>
+                <span class="version-number">Last updated: v2022.08.23</span>
             </div>
         </div>
         <div class="menu-button-container" onclick="toggleNav()">
