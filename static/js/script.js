@@ -1,5 +1,5 @@
 // Scripts for "Everything about Tunna Duong" website.
-// Copyright 2022 Tunna Duong. All rights reserved.
+// © Copyright 2022 Tunna Duong. All rights reserved.
 
 const originalNum = parseInt($("#additional-number").text());
 const newNum = originalNum + 1;
@@ -21,11 +21,26 @@ responsivePeopleSection();
 
 $(window).on("resize", responsivePeopleSection);
 
+var timer = null;
+
 function toggleNav() {
   $("#myNav").toggleClass("full-height");
   $(".overlay-below").toggleClass("full-height");
   $(".menu-button-container").toggleClass("menu-active");
   $(".overlay-content").toggleClass("push-up");
+  $("#myNav").removeClass("o-show");
+  if (timer !== null) {
+    clearTimeout(timer);
+    timer = null;
+  } else {
+    if ($("#myNav").hasClass("o-show")) {
+      $("#myNav").removeClass("o-show");
+    } else {
+      timer = setTimeout(() => {
+        $("#myNav").toggleClass("o-show");
+      }, 500);
+    }
+  }
 }
 
 $("#typed").typed({
@@ -50,3 +65,33 @@ $("#typed").typed({
   loop: false,
   contentType: "html",
 });
+
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  // dark mode is detected
+  localStorage.setItem("theme", "dark");
+  document.documentElement.setAttribute("data-theme", "dark");
+} else {
+  localStorage.setItem("theme", "light");
+  document.documentElement.setAttribute("data-theme", "light");
+}
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  }
+}
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (event) => {
+    const newColorScheme = event.matches ? "dark" : "light";
+    localStorage.setItem("theme", newColorScheme);
+    document.documentElement.setAttribute("data-theme", newColorScheme);
+  });
