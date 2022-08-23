@@ -34,7 +34,16 @@
                 <a href="#">Viết cho mình</a>
                 <a href="#">Báo lỗi</a>
                 <a href="#">Ủng hộ</a>
-                <span class="version-number">Last updated: v2022.08.23</span>
+                <span class="version-number">Last updated: 23.08.22-20:08</span>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round">
+                            <div class="switch--moon">🌛</div>
+                            <div class="switch--sun">🌞</div>
+                        </div>
+                    </label>
+                </div>
             </div>
         </div>
         <div class="menu-button-container" onclick="toggleNav()">
@@ -84,7 +93,9 @@
         <div class="main--section-3">
             <h1>Những người<br>đã gặp</h1>
             <div class="section--content people-i-met">
-                <img src="./static/img/people/linhngo.jpg" alt="Ngô Nguyễn Thảo Linh">
+                <div>
+                    <img src="./static/img/people/linhngo.jpg" alt="Ngô Nguyễn Thảo Linh">
+                </div>
                 <img src="./static/img/people/thanhcong.png" alt="Phạm Thành Công">
                 <img src="./static/img/people/phanducmanh.png" alt="Phan Đức Mạnh">
                 <img src="./static/img/people/luongquangthang.png" alt="Lương Quang Thắng">

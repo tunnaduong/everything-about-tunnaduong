@@ -61,6 +61,7 @@ body {
 .header--secondary {
   font-size: 30px;
   font-weight: 400;
+  color: var(--black);
 }
 
 .header--primary {
@@ -68,6 +69,7 @@ body {
   margin: 0;
   font-size: 40px;
   margin-bottom: 20px;
+  color: var(--black);
 }
 
 /* Deprecated! */
@@ -110,6 +112,7 @@ body {
   font-weight: 400;
   margin: 0;
   margin-top: -6px;
+  color: var(--black);
 }
 
 .main--section-1,
@@ -128,10 +131,12 @@ body {
   max-width: 400px;
   width: 100%;
   min-width: 0;
+  color: var(--black);
 }
 
 footer {
   margin: 40px 0;
+  color: var(--black);
 }
 
 .footer--copyright,
@@ -267,7 +272,7 @@ footer {
   column-gap: 10px;
 }
 
-.people-i-met > img {
+.people-i-met img {
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -318,6 +323,9 @@ footer {
 .card--people > div > .people--name {
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card--people > div > .people--review {
@@ -457,7 +465,7 @@ footer {
 .overlay a {
   padding: 8px 0;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 27px;
   color: var(--gray);
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
@@ -476,7 +484,7 @@ footer {
   background: none repeat scroll 0 0 transparent;
   content: "";
   display: block;
-  height: 3px;
+  height: 2px;
   left: 50%;
   position: absolute;
   background: var(--gray);
@@ -515,9 +523,93 @@ footer {
 .version-number {
   font-size: 10px;
   color: gray;
-  line-height: 40px;
+  margin: 10px 0 20px;
+  display: block;
 }
-/* 
-.masked-overflow {
-  background-image: linear-gradient(to bottom, transparent, black);
-} */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #767676;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+  z-index: 9;
+}
+
+input:checked + .slider {
+  background-color: #3b7937;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: #fff;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch--moon,
+.switch--sun {
+  position: absolute;
+  z-index: 1;
+  transition: opacity 400ms;
+  top: 10%;
+  font-size: 22px;
+  transition: all 400ms;
+}
+
+.switch--moon {
+  left: 10%;
+}
+
+.switch--sun {
+  right: 7%;
+}
+
+input:checked + .slider > .switch--sun {
+  right: 20%;
+  opacity: 0;
+}
+
+input:not(:checked) + .slider > .switch--moon {
+  left: 20%;
+  opacity: 0;
+}
