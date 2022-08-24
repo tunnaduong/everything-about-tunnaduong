@@ -258,6 +258,16 @@ footer {
     );
     height: 280px !important;
   }
+
+  .switch--moon,
+  .switch--sun {
+    font-size: 18px !important;
+    top: 1% !important;
+  }
+
+  /* .switch--moon {
+    top: 10% !important;
+  } */
 }
 
 .push-up {
