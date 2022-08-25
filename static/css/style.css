@@ -10,6 +10,7 @@
   --filter-white: invert(0);
   --content-bg: rgba(0, 0, 0, 0.2);
   --overlay-bg: white;
+  --hover-bg: white;
 }
 
 [data-theme="dark"] {
@@ -21,6 +22,7 @@
   --filter-white: invert(1);
   --content-bg: rgba(255, 255, 255, 0.2);
   --overlay-bg: #222222;
+  --hover-bg: rgba(100, 100, 100, 1);
 }
 
 html {
@@ -288,7 +290,7 @@ footer {
   border-radius: 50%;
 }
 
-.people-i-met > div {
+.people-i-met > #additional-number {
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -419,7 +421,7 @@ footer {
   height: 0;
   width: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 9;
   left: 0;
   top: 0;
   transition: 0.5s;
@@ -430,7 +432,7 @@ footer {
   height: 0;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 8;
   left: 0;
   top: 0;
   background-color: var(--overlay-bg);
@@ -622,4 +624,75 @@ input:checked + .slider > .switch--sun {
 input:not(:checked) + .slider > .switch--moon {
   left: 20%;
   opacity: 0;
+}
+
+.people-details {
+  border-radius: 50px;
+  position: absolute;
+  height: 55px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  max-width: 55px;
+  transition-duration: 0.5s;
+  transition-property: max-width, z-index, opacity;
+  /* transition-delay: 100ms; */
+  background-color: var(--hover-bg);
+  z-index: 8;
+  opacity: 0;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+.people-thumb {
+  display: flex;
+  flex-direction: row;
+}
+
+.people-details > img {
+  float: left;
+}
+
+.people-thumb > img {
+  z-index: -1;
+}
+
+.people-thumb img {
+  position: relative;
+  z-index: 0;
+  transition-duration: 0.25s;
+  transition-property: z-index;
+}
+
+.details {
+  white-space: nowrap;
+  padding: 5px 15px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.details--name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.details--summary {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+p {
+  margin: 0;
+}
+
+.people-thumb > img:hover + .people-details,
+.people-details:hover {
+  max-width: 330px;
+  position: absolute;
+  opacity: 1;
 }

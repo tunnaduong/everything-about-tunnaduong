@@ -93,17 +93,96 @@
         <div class="main--section-3">
             <h1>Những người<br>đã gặp</h1>
             <div class="section--content people-i-met">
-                <div>
+                <div class="people-thumb">
                     <img src="./static/img/people/linhngo.jpg" alt="Ngô Nguyễn Thảo Linh">
+                    <div class="people-details">
+                        <img src="./static/img/people/linhngo.jpg" alt="Ngô Nguyễn Thảo Linh">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
                 </div>
-                <img src="./static/img/people/thanhcong.png" alt="Phạm Thành Công">
-                <img src="./static/img/people/phanducmanh.png" alt="Phan Đức Mạnh">
-                <img src="./static/img/people/luongquangthang.png" alt="Lương Quang Thắng">
-                <img src="./static/img/people/hongquan.png" alt="Đỗ Hồng Quân">
-                <img src="./static/img/people/haquangthang.png" alt="Hà Quang Thắng">
-                <img src="./static/img/people/lelam.png" alt="Lê Hoàng Tùng Lâm">
-                <img src="./static/img/people/thienhuong.png" alt="Phạm Thị Thiên Hương">
-                <img src="./static//img/people/buihien.png" alt="Bùi Thu Hiền">
+                <div class="people-thumb">
+                    <img src="./static/img/people/thanhcong.png" alt="Phạm Thành Công">
+                    <div class="people-details">
+                        <img src="./static/img/people/thanhcong.png" alt="Phạm Thành Công">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="people-thumb">
+                    <img src="./static/img/people/phanducmanh.png" alt="Phan Đức Mạnh">
+                    <div class="people-details">
+                        <img src="./static/img/people/phanducmanh.png" alt="Phan Đức Mạnh">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="people-thumb">
+                    <img src="./static/img/people/luongquangthang.png" alt="Lương Quang Thắng">
+                    <div class="people-details">
+                        <img src="./static/img/people/luongquangthang.png" alt="Lương Quang Thắng">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="people-thumb">
+                    <img src="./static/img/people/hongquan.png" alt="Đỗ Hồng Quân">
+                    <div class="people-details">
+                        <img src="./static/img/people/hongquan.png" alt="Đỗ Hồng Quân">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="people-thumb">
+                    <img src="./static/img/people/haquangthang.png" alt="Hà Quang Thắng">
+                    <div class="people-details">
+                        <img src="./static/img/people/haquangthang.png" alt="Hà Quang Thắng">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="people-thumb">
+                    <img src="./static/img/people/lelam.png" alt="Lê Hoàng Tùng Lâm">
+                    <div class="people-details">
+                        <img src="./static/img/people/lelam.png" alt="Lê Hoàng Tùng Lâm">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="people-thumb">
+                    <img src="./static/img/people/thienhuong.png" alt="Phạm Thị Thiên Hương">
+                    <div class="people-details">
+                        <img src="./static/img/people/thienhuong.png" alt="Phạm Thị Thiên Hương">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="people-thumb">
+                    <img src="./static//img/people/buihien.png" alt="Bùi Thu Hiền">
+                    <div class="people-details">
+                        <img src="./static//img/people/buihien.png" alt="Bùi Thu Hiền">
+                        <div class="details">
+                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                        </div>
+                    </div>
+                </div>
                 <div id="additional-number">
                     +26
                 </div>
