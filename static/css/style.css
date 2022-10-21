@@ -272,6 +272,11 @@ footer {
   /* .switch--moon {
     top: 10% !important;
   } */
+
+  .under-construction-badge {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .push-up {
