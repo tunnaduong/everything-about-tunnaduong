@@ -14,6 +14,10 @@
 
 <body>
     <!-- Construction badge: <img src="./static/img/under-construction.png" class="under-construction-badge" /> -->
+    <a href="https://github.com/tunnaduong/everything-about-tunnaduong/issues">
+        <img src="./static/img/under-construction.png" class="under-construction-badge" alt="Under construction badge"
+            title="Bạn muốn góp ý cho website? Bấm vào ảnh nhé..." />
+    </a>
     <center>
         <div id="header">
             <img src="./static/img/tunnaduong.png" alt="Tunna Duong logo" class="logo">
