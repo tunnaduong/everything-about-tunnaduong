@@ -200,6 +200,7 @@ footer {
   width: 200px;
   height: 200px;
   cursor: pointer;
+  z-index: 99999;
 }
 
 #header {
