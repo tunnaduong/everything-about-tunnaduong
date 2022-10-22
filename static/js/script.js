@@ -127,3 +127,26 @@ jQuery.expr.filters.offscreen = function (el) {
     rect.y > window.innerHeight
   );
 };
+
+$(document).ready(function () {
+  $("#floating-footer-alert")
+    .delay("4000")
+    .slideToggle("slow", function () {
+      $("#floating-footer-alert").hide();
+    });
+});
+
+$(".under-construction-badge").on("click", function (e) {
+  if (!$("#floating-footer-alert").is(":visible")) {
+    $("#floating-footer-alert").slideToggle("slow", function () {
+      $("#floating-footer-alert").show();
+    });
+  }
+});
+
+$("#alert-close-btn").on("click", function (e) {
+  $("#floating-footer-alert").stop(true);
+  $("#floating-footer-alert").slideToggle("slow", function () {
+    $("#floating-footer-alert").hide();
+  });
+});
