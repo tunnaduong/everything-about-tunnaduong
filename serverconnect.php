@@ -6,6 +6,7 @@ $tendb = "tunnaduong_everything";
 $db = mysqli_connect($maychu, $tendangnhap, $matkhau, $tendb);
 $db2 = mysqli_connect($maychu, "tunnaduong_everyday", $matkhau, "tunnaduong_everyday");
 $db3 = mysqli_connect($maychu, "tunnaduong_blog", $matkhau, "tunnaduong_blog");
+$db4 = mysqli_connect($maychu, "tunnaduong_luubut", $matkhau, "tunnaduong_luubut");
 $servername = $maychu;
 $username = $tendangnhap;
 $password = $matkhau;
@@ -20,6 +21,7 @@ mysqli_set_charset($conn, 'UTF8');
 mysqli_set_charset($db, 'UTF8');
 mysqli_set_charset($db2, 'UTF8');
 mysqli_set_charset($db3, 'UTF8');
+mysqli_set_charset($db4, 'UTF8');
 mysqli_set_charset($con, 'UTF8');
 $link = mysqli_connect($maychu, $tendangnhap, $matkhau, $tendb);
 if ($link === false) {
