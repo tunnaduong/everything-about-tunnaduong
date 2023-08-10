@@ -6,3 +6,4 @@
 <link rel="stylesheet" href="/static/css/style.css" />
 <script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/typed.min.js"></script>
+<script src="/static/js/moment.min.js"></script>
