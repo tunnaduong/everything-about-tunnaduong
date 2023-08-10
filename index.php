@@ -3,6 +3,7 @@
 
 <head>
     <?php
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/serverconnect.php';
   require_once $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
   ?>
 </head>
@@ -80,6 +81,9 @@
     <div class="main">
         <div class="main--section-1">
             <h1>Nhật ký<br />hằng ngày</h1>
+            <?php
+
+      ?>
             <div class="section--content">
                 <div class="content--card">
                     <p class="card--date">28/07/2022</p>
