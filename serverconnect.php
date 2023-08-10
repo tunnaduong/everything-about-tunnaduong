@@ -4,6 +4,7 @@ $tendangnhap = "tunnaduong_everything";
 $matkhau = "Tunganh2003";
 $tendb = "tunnaduong_everything";
 $db = mysqli_connect($maychu, $tendangnhap, $matkhau, $tendb);
+$db2 = mysqli_connect($maychu, "tunnaduong_everyday", $matkhau, "tunnaduong_everyday");
 $servername = $maychu;
 $username = $tendangnhap;
 $password = $matkhau;
