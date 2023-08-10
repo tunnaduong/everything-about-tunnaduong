@@ -93,10 +93,12 @@
         ?>
 
             <div class="content--card">
-              <p id="everyday-date-<?php echo $row['id'] ?>" class="card--date">
-                <?php echo $row['date']; ?>
-              </p>
-              <p class="card--summary"><?php echo $row['title']; ?></p>
+              <a class=" no-color" href="https://everyday.tunnaduong.com" rel="_blank">
+                <p id="everyday-date-<?php echo $row['id'] ?>" class="card--date">
+                  <?php echo $row['date']; ?>
+                </p>
+                <p class="card--summary"><?php echo $row['title']; ?></p>
+              </a>
             </div>
             <script>
               $("#everyday-date-<?php echo $row['id']; ?>").text(moment('<?php echo $row['date']; ?>').format(
@@ -124,11 +126,13 @@
           while ($row = $result->fetch_assoc()) {
         ?>
 
-            <div class="content--card">
+            <div class="content--card"">
+                <a class=" no-color" href=" <?php echo $row['guid'] ?>" rel="_blank">
               <p id="blog-date-<?php echo $row['ID'] ?>" class="card--date">
                 <?php echo $row['post_date']; ?>
               </p>
               <p class="card--summary"><?php echo $row['post_title']; ?></p>
+              </a>
             </div>
             <script>
               $("#blog-date-<?php echo $row['ID']; ?>").text(moment('<?php echo $row['post_date']; ?>').format(

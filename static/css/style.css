@@ -749,3 +749,9 @@ p {
 #floating-footer-alert a:active {
   color: black;
 }
+
+.no-color {
+  color: inherit;
+  text-decoration: none;
+  background-color: none;
+}
