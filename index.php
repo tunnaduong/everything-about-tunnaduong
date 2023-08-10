@@ -270,9 +270,9 @@
     <center>
         <footer>
             <p class="footer--copyright">
-                <span id="footer--mobile">© 2022 Duong Tung Anh<br /><span
+                <span id="footer--mobile">© 2022-<?php echo date("Y") ?> Duong Tung Anh<br /><span
                         style="color: gray; font-weight: 300; font-size: 15px">All rights reserved</span></span>
-                <span id="footer--desktop">© 2022 Duong Tung Anh. All rights reserved.</span>
+                <span id="footer--desktop">© 2022-<?php echo date("Y") ?> Duong Tung Anh. All rights reserved.</span>
             </p>
             <p class="footer--fun">
                 Được làm bằng 💕 <i>tình yêu</i>, 🔥 <i>nhiệt huyết</i>, ⌨️
