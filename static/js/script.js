@@ -1,25 +1,25 @@
 // Scripts for "Everything about Tunna Duong" website.
 // © Copyright 2022 Tunna Duong. All rights reserved.
 
-const originalNum = parseInt($("#additional-number").text());
-const newNum = originalNum + 1;
+// const originalNum = parseInt($("#additional-number").text());
+// const newNum = originalNum + 1;
 
-function responsivePeopleSection() {
-  var sectionWidth = $(".main--section-3").width();
-  var flag = 0;
-  if (sectionWidth < 250 && flag == 0) {
-    flag = 1;
-    $(".people-i-met > img").last().css("display", "none");
-    $("#additional-number").text("+" + newNum);
-  } else {
-    $(".people-i-met > img").last().css("display", "block");
-    $("#additional-number").text("+" + originalNum);
-  }
-}
+// function responsivePeopleSection() {
+//   var sectionWidth = $(".main--section-3").width();
+//   var flag = 0;
+//   if (sectionWidth < 250 && flag == 0) {
+//     flag = 1;
+//     $(".people-i-met > img").last().css("display", "none");
+//     $("#additional-number").text("+" + newNum);
+//   } else {
+//     $(".people-i-met > img").last().css("display", "block");
+//     $("#additional-number").text("+" + originalNum);
+//   }
+// }
 
-responsivePeopleSection();
+// responsivePeopleSection();
 
-$(window).on("resize", responsivePeopleSection);
+// $(window).on("resize", responsivePeopleSection);
 
 var timer = null;
 
@@ -150,3 +150,5 @@ $("#alert-close-btn").on("click", function (e) {
     $("#floating-footer-alert").hide();
   });
 });
+
+moment.locale("vi");
