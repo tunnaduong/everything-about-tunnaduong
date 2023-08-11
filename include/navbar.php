@@ -1,5 +1,5 @@
 <center>
-    <div id="header">
+    <div id="header" onclick="location.href = '/'" style="cursor: pointer; width: fit-content">
         <img src="/static/img/tunnaduong.png" alt="Tunna Duong logo" class="logo" />
         <div class="header--secondary-container">
             <span class="header--secondary" id="typed">&nbsp;</span>

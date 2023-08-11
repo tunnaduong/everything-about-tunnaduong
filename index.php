@@ -43,7 +43,7 @@
     <div class="main">
         <div class="main--section-1">
             <h1>
-                <a href="https://everyday.tunnaduong.com" class="no-color">
+                <a href="/everyday" class="no-color">
                     Nhật ký<br />hằng ngày
                 </a>
             </h1>
