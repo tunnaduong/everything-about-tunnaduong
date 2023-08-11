@@ -7,3 +7,4 @@
 <script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/typed.min.js"></script>
 <script src="/static/js/moment.min.js"></script>
+<script src="https://kit.fontawesome.com/be3d8625b2.js" crossorigin="anonymous"></script>

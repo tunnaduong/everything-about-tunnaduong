@@ -28,7 +28,9 @@
                         <div class="date-dot--inner"></div>
                     </div>
                     <div class="card--date-2">
-                        <div class="card--date-hour">17:15</div>
+                        <div class="card--date-hour">
+                            <i class="fas fa-clock"></i> 17:15
+                        </div>
                         <div class="card--date-calendar">27 Tháng Bảy 2022</div>
                     </div>
                     <a class=" no-color" href="https://everyday.tunnaduong.com" target="_blank">
