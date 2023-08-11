@@ -53,6 +53,7 @@ body {
 .logo {
   width: 100px;
   filter: var(--filter-white);
+  position: relative;
 }
 
 .header--secondary-container {
