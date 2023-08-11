@@ -244,6 +244,15 @@ footer {
   text-align: right;
 }
 
+@media only screen and (max-width: 1250px) {
+  .card--date-2 {
+    position: relative;
+    max-width: max-content;
+    transform: translateX(0) translateY(0);
+    text-align: left;
+  }
+}
+
 .card--date-hour {
   font-weight: 400;
 }
