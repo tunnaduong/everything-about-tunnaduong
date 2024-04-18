@@ -60,14 +60,14 @@
 
             <div class="content--card">
               <a class=" no-color" href="https://everyday.tunnaduong.com" target="_blank">
-                <p id="everyday-date-<?php echo $row['id'] ?>" class="card--date">
-                  <?php echo $row['date']; ?>
+                <p id="everyday-date-<?= $row['id'] ?>" class="card--date">
+                  <?= $row['date']; ?>
                 </p>
-                <p class="card--summary"><?php echo $row['title']; ?></p>
+                <p class="card--summary"><?= $row['title']; ?></p>
               </a>
             </div>
             <script>
-              $("#everyday-date-<?php echo $row['id']; ?>").text(moment('<?php echo $row['date']; ?>').format(
+              $("#everyday-date-<?= $row['id']; ?>").text(moment('<?= $row['date']; ?>').format(
                 'DD/MM/YYYY'));
             </script>
         <?php
@@ -97,15 +97,15 @@
         ?>
 
             <div class="content--card"">
-                <a class=" no-color" href=" <?php echo $row['guid'] ?>" target="_blank">
-              <p id="blog-date-<?php echo $row['ID'] ?>" class="card--date">
-                <?php echo $row['post_date']; ?>
+                <a class=" no-color" href=" <?= $row['guid'] ?>" target="_blank">
+              <p id="blog-date-<?= $row['ID'] ?>" class="card--date">
+                <?= $row['post_date']; ?>
               </p>
-              <p class="card--summary"><?php echo $row['post_title']; ?></p>
+              <p class="card--summary"><?= $row['post_title']; ?></p>
               </a>
             </div>
             <script>
-              $("#blog-date-<?php echo $row['ID']; ?>").text(moment('<?php echo $row['post_date']; ?>').format(
+              $("#blog-date-<?= $row['ID']; ?>").text(moment('<?= $row['post_date']; ?>').format(
                 'DD/MM/YYYY'));
             </script>
         <?php
@@ -243,18 +243,9 @@
       </div>
     </div>
   </div>
-  <center>
-    <footer>
-      <p class="footer--copyright">
-        <span id="footer--mobile">© 2022-<?php echo date("Y") ?> Duong Tung Anh<br /><span style="color: gray; font-weight: 300; font-size: 15px">All rights reserved</span></span>
-        <span id="footer--desktop">© 2022-<?php echo date("Y") ?> Duong Tung Anh. All rights reserved.</span>
-      </p>
-      <p class="footer--fun">
-        Được làm bằng 💕 <i>tình yêu</i>, 🔥 <i>nhiệt huyết</i>, ⌨️
-        <i>bàn phím</i> và rất nhiều ☕️ <i>cà phê</i>.
-      </p>
-    </footer>
-  </center>
+  <?php
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/include/footer.php';
+  ?>
   <script src="/static/js/script.js"></script>
 </body>
 
