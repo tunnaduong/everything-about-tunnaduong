@@ -193,6 +193,7 @@ body {
 .section--top-bar h1 span {
   font-size: 17px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .people-list {
@@ -200,21 +201,15 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
-}
-
-.list--col {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  flex-wrap: wrap;
-  gap: 25px;
+  justify-content: space-between;
 }
 
 .person {
   display: flex;
   flex-direction: row;
-  min-width: 365px;
+  min-width: 325px;
   align-items: center;
+  cursor: pointer;
 }
 
 .person img {

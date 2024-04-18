@@ -28,74 +28,29 @@
 
             <div class="section--content">
                 <div class="people-list">
-                    <div class="list--col">
-                        <div class="person">
-                            <img src="/static/img/people/haquangthang.png">
-                            <div class="person--detail">
-                                <h2>Hà Quang Thắng</h2>
-                                <span class="meet-time">Quen biết từ 01/2022 - 19 tuổi</span>
-                                <span>1 kỷ niệm cùng nhau</span>
+                    <?php
+                    // $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+                    // $offset = ($page - 1) * 4;
+                    $sql = "SELECT p.id, p.name, p.met_from, p.date_of_birth, p.avatar, COUNT(m.person_id) AS memories_count FROM people AS p LEFT JOIN memories AS m ON p.id = m.person_id GROUP BY p.id ORDER BY p.id DESC";
+                    $result = $db->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                    ?>
+                            <div class="person">
+                                <img src="<?= $row['avatar'] ?>">
+                                <div class="person--detail">
+                                    <h2><?= $row['name'] ?></h2>
+                                    <span class="meet-time">Quen biết từ <?= date_format(date_create($row['met_from']), "m/Y") ?> - <?= DateTime::createFromFormat('Y-m-d', $row['date_of_birth'], new DateTimeZone('Asia/Ho_Chi_Minh'))
+                                                                                                                                        ->diff(new DateTime('now', new DateTimeZone('Asia/Ho_Chi_Minh')))
+                                                                                                                                        ->y; ?> tuổi</span>
+                                    <span><?= $row['memories_count'] ?> kỷ niệm cùng nhau</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="person">
-                            <img src="/static/img/people/lelam.png">
-                            <div class="person--detail">
-                                <h2>Lê Hoàng Tùng Lâm</h2>
-                                <span class="meet-time">Quen biết từ 07/2018 - 19 tuổi</span>
-                                <span>1 kỷ niệm cùng nhau</span>
-                            </div>
-                        </div>
-                        <div class="person">
-                            <img src="/static/img/people/thienhuong.png">
-                            <div class="person--detail">
-                                <h2>Phạm Thị Thiên Hương</h2>
-                                <span class="meet-time">Quen biết từ 07/2018 - 19 tuổi</span>
-                                <span>0 kỷ niệm cùng nhau</span>
-                            </div>
-                        </div>
-                        <div class="person">
-                            <img src="/static/img/people/buihien.png">
-                            <div class="person--detail">
-                                <h2>Bùi Thu Hiền</h2>
-                                <span class="meet-time">Quen biết từ 07/2018 - 19 tuổi</span>
-                                <span>0 kỷ niệm cùng nhau</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list--col">
-                        <div class="person">
-                            <img src="/static/img/people/thanhcong.png">
-                            <div class="person--detail">
-                                <h2>Phạm Thành Công</h2>
-                                <span class="meet-time">Quen biết từ 05/2022 - 19 tuổi</span>
-                                <span>18 kỷ niệm cùng nhau</span>
-                            </div>
-                        </div>
-                        <div class="person">
-                            <img src="/static/img/people/luongquangthang.png">
-                            <div class="person--detail">
-                                <h2>Lương Quang Thắng</h2>
-                                <span class="meet-time">Quen biết từ 05/2022 - 19 tuổi</span>
-                                <span>14 kỷ niệm cùng nhau</span>
-                            </div>
-                        </div>
-                        <div class="person">
-                            <img src="/static/img/people/phanducmanh.png">
-                            <div class="person--detail">
-                                <h2>Phan Đức Mạnh</h2>
-                                <span class="meet-time">Quen biết từ 05/2022 - 21 tuổi</span>
-                                <span>10 kỷ niệm cùng nhau</span>
-                            </div>
-                        </div>
-                        <div class="person">
-                            <img src="/static/img/people/hongquan.png">
-                            <div class="person--detail">
-                                <h2>Đỗ Hồng Quân</h2>
-                                <span class="meet-time">Quen biết từ 07/2018 - 19 tuổi</span>
-                                <span>20 kỷ niệm cùng nhau</span>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
