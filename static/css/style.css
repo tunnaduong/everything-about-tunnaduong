@@ -170,7 +170,7 @@ body {
     var(--black),
     rgba(0, 0, 0, 0)
   );
-  padding: 0 29px;
+  padding: 0 0 0 29px;
   max-width: 900px;
   width: 100%;
   min-width: 0;
@@ -186,6 +186,60 @@ body {
 .section--top-bar h1 {
   flex: 1;
   margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section--top-bar h1 span {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.people-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.list--col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  min-width: 365px;
+  align-items: center;
+}
+
+.person img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.person--detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  line-height: 25px;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.person--detail h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.meet-time {
+  font-weight: 600;
 }
 
 footer {

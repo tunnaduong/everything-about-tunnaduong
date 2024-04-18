@@ -21,7 +21,7 @@
                     </a>
                 </h1>
                 <span class="top-bar"><a href="/" class="no-color">Bài viết blog</a></span>
-                <span class="top-bar"><a href="/" class="no-color">Những người đã gặp</a></span>
+                <span class="top-bar"><a href="/nhung-nguoi-da-gap/" class="no-color">Những người đã gặp</a></span>
                 <span class="top-bar"><a href="/" class="no-color">Mọi người nghĩ gì về mình</a></span>
             </div>
 

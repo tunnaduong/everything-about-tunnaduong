@@ -8,7 +8,7 @@
   ?>
 </head>
 
-<body>
+<body onclick="">
   <!-- Construction badge: <img src="./static/img/under-construction.png" class="under-construction-badge" /> -->
   <!-- <img
       src="./static/img/under-construction.png"
@@ -118,7 +118,11 @@
       </div>
     </div>
     <div class="main--section-3">
-      <h1>Những người<br />đã gặp</h1>
+      <h1>
+        <a href="/nhung-nguoi-da-gap/" class="no-color">
+          Những người<br />đã gặp
+        </a>
+      </h1>
       <div class="section--content people-i-met">
         <div class="people-thumb">
           <img src="./static/img/people/linhngo.jpg" alt="Ngô Nguyễn Thảo Linh" />
