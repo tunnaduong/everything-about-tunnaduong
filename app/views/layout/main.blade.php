@@ -35,7 +35,7 @@
                 <a href="#">Viết cho mình</a>
                 <a href="#">Báo lỗi</a>
                 <a href="#">Ủng hộ</a>
-                <span class="version-number">Last updated: 10.08.23-20:31</span>
+                <span class="version-number">Last updated: 10.07.24-14:25</span>
                 <div class="theme-switch-wrapper">
                     <label class="theme-switch" for="checkbox">
                         <input type="checkbox" id="checkbox" />
