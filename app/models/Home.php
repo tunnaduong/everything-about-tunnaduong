@@ -25,4 +25,11 @@ class Home extends BaseModel
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
+
+    public function getPeople()
+    {
+        $sql = "SELECT p.id, p.name, p.met_from, p.date_of_birth, p.avatar, COUNT(m.person_id) AS memories_count FROM people AS p LEFT JOIN memories AS m ON p.id = m.person_id GROUP BY p.id ORDER BY p.id DESC";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
 }

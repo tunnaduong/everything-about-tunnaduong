@@ -278,6 +278,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .polygon {
   -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
   clip-path: polygon(100% 0, 0 50%, 100% 100%);

@@ -12,6 +12,9 @@ try {
 
     $router->get("/", [App\Controllers\HomeController::class, 'index']);
 
+    $router->get("/nhat-ky-hang-ngay", [App\Controllers\HomeController::class, 'everyday']);
+
+    $router->get("/nhung-nguoi-da-gap", [App\Controllers\HomeController::class, 'people']);
 
 
     // khu vực cần quan tâm -----------

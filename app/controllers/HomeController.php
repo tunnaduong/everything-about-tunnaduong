@@ -23,6 +23,12 @@ class HomeController extends BaseController
     public function everyday()
     {
         $diaries = $this->home->getEveryday();
-        return $this->render("pages.home.everyday", compact("diaries"));
+        return $this->render("pages.diary.index", compact("diaries"));
+    }
+
+    public function people()
+    {
+        $people = $this->home->getPeople();
+        return $this->render("pages.people.index", compact("people"));
     }
 }
