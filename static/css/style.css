@@ -282,6 +282,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.d-block {
+  display: block;
+}
+
 .polygon {
   -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
   clip-path: polygon(100% 0, 0 50%, 100% 100%);
@@ -320,13 +324,17 @@ footer {
 }
 
 .card--date-2 {
-  max-width: 150px;
+  min-width: 150px;
   position: absolute;
   transform: translateX(-204px) translateY(10px);
   text-align: right;
 }
 
 @media only screen and (max-width: 1250px) {
+  .d-block {
+    display: inline;
+  }
+
   .card--date-2 {
     position: relative;
     max-width: max-content;

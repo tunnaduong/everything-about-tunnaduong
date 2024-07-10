@@ -1,3 +1,19 @@
+@php
+    $a = [
+        'January' => 'Tháng Một',
+        'February' => 'Tháng Hai',
+        'March' => 'Tháng Ba',
+        'April' => 'Tháng Tư',
+        'May' => 'Tháng Năm',
+        'June' => 'Tháng Sáu',
+        'July' => 'Tháng Bảy',
+        'August' => 'Tháng Tám',
+        'September' => 'Tháng Chín',
+        'October' => 'Tháng Mười',
+        'November' => 'Tháng Mười một',
+        'December' => 'Tháng Mười hai',
+    ];
+@endphp
 @extends('layout.main')
 
 @section('content')
@@ -15,68 +31,38 @@
             </div>
 
             <div class="section--content">
-
-                <div class="content--card mb-30">
-                    <div class="polygon"></div>
-                    <div class="date-dot">
-                        <div class="date-dot--inner"></div>
-                    </div>
-                    <div class="card--date-2">
-                        <div class="card--date-hour">
-                            <i class="fas fa-clock"></i> 21:12
+                @foreach ($diaries as $diary)
+                    <div class="content--card mb-30">
+                        <div class="polygon"></div>
+                        <div class="date-dot">
+                            <div class="date-dot--inner"></div>
                         </div>
-                        <div class="card--date-calendar">27 Tháng Bảy 2022</div>
-                    </div>
-                    <a class=" no-color" href="https://everyday.tunnaduong.com" target="_blank">
-                        <p class="card--title">
-                            Một ý tưởng hay
-                        </p>
-                        <p class="card--content">Bài viết thứ hai trong ngày hôm nay, đó là về ý tưởng mới của mình. Đại
-                            khái là mình sẽ tạo một trang web đơn giản lưu trữ các bài viết tự học và ôn luyện để ôn thi
-                            Final Exam cho sinh viên đang học ngành Kỹ thuật phần mềm tại Đại học FPT. Về bản chất thì
-                            nó cũng giống các web khác của các anh chị khóa trên như kiểu Thaycacac, Kungfutech,...
-                            nhưng mà ngoài chia sẻ những tài liệu ôn luyện, key, đề tự ôn, mình sẽ chia sẻ về quá trình
-                            tự ôn luyện để lấy gốc thi Final Exam các môn trong kì mà mình đang học. Trong bối cảnh mà
-                            chỉ còn 2 ngày nữa là mình bắt đầu thi PE và hôm sau thi FE môn toán kỹ thuật :))). Web này
-                            đang được phát triển tại địa chỉ: https://naominhcungon.github.io. Bao giờ có tiền và
-                            website được nhiều người biết đến thì mình sẽ chuyển sang địa chỉ mới có tên miền ngắn gọn
-                            hơn :)))</p>
-                    </a>
-                </div>
-
-                <div class="content--card">
-                    <div class="polygon"></div>
-                    <div class="date-dot">
-                        <div class="date-dot--inner"></div>
-                    </div>
-                    <div class="card--date-2">
-                        <div class="card--date-hour">
-                            <i class="fas fa-clock"></i> 17:08
+                        <div class="card--date-2">
+                            <div class="card--date-hour">
+                                <i class="fas fa-clock"></i> {{ date('H:i', strtotime($diary->date)) }}
+                            </div>
+                            <div class="card--date-calendar">
+                                <span class="d-block">{{ strtr(date('j F', strtotime($diary->date)), $a) }}</span>
+                                <span>{{ strtr(date('Y', strtotime($diary->date)), $a) }}</span>
+                            </div>
                         </div>
-                        <div class="card--date-calendar">27 Tháng Bảy 2022</div>
+                        <a class=" no-color" href="https://everyday.tunnaduong.com" target="_blank">
+                            <p class="card--title">
+                                Một ý tưởng hay
+                            </p>
+                            <p class="card--content">Bài viết thứ hai trong ngày hôm nay, đó là về ý tưởng mới của mình. Đại
+                                khái là mình sẽ tạo một trang web đơn giản lưu trữ các bài viết tự học và ôn luyện để ôn thi
+                                Final Exam cho sinh viên đang học ngành Kỹ thuật phần mềm tại Đại học FPT. Về bản chất thì
+                                nó cũng giống các web khác của các anh chị khóa trên như kiểu Thaycacac, Kungfutech,...
+                                nhưng mà ngoài chia sẻ những tài liệu ôn luyện, key, đề tự ôn, mình sẽ chia sẻ về quá trình
+                                tự ôn luyện để lấy gốc thi Final Exam các môn trong kì mà mình đang học. Trong bối cảnh mà
+                                chỉ còn 2 ngày nữa là mình bắt đầu thi PE và hôm sau thi FE môn toán kỹ thuật :))). Web này
+                                đang được phát triển tại địa chỉ: https://naominhcungon.github.io. Bao giờ có tiền và
+                                website được nhiều người biết đến thì mình sẽ chuyển sang địa chỉ mới có tên miền ngắn gọn
+                                hơn :)))</p>
+                        </a>
                     </div>
-                    <a class=" no-color" href="https://everyday.tunnaduong.com" target="_blank">
-                        <p class="card--title">
-                            Để không bị lãng quên
-                        </p>
-                        <p class="card--content">Xin chào, lâu lắm rồi mình mới đụng đến website này. Thực sự thì trong cuộc
-                            sống hằng ngày của mình có rất nhiều lúc mình rảnh rỗi. Tuy nhiên những lúc đó mình thường tự
-                            nghĩ ra những thứ linh tinh về lập trình để làm. Và cũng vì thế nên dù mình rảnh thật nhưng thời
-                            gian đó thường là mình sẽ tập trung để làm những thứ đó. Vì vậy nên mình hay bị kiểu bỏ dở một
-                            việc mình từng cho là nên làm trước đó. Và việc viết nhật ký hằng ngày trên web này là một việc
-                            như vậy. Thật sự thì có những lúc mình có hứng thú và suy nghĩ sâu xa để viết lách nhưng có
-                            những lúc mình cần một thời gian để tập trung vào làm những dự án cá nhân. Hôm nay là một ngày
-                            như vậy. Tuy nhiên, mình bỗng nảy ra ý tưởng cải tiến website này đồng thời gộp lại hai website
-                            viết lách chia sẻ của mình thành một. Và mình sẽ lấy tên nó là Life of Tunna, đặt địa chỉ tại
-                            https://life.tunnaduong.com. Về mặt ý tưởng, thì mình nghĩ là các tính năng sẽ gồm có: trang
-                            timeline các hoạt động của mình trong cuộc đời theo mốc từng ngày hoặc từng tháng, từng năm;
-                            trang bài viết chia sẻ cá nhân có các chuyên mục về lập trình và review đồ dùng cá nhân, dịch
-                            vụ,...; và quan trọng nhất theo mình nghĩ sẽ là một điểm nhấn cho website nếu có. Đó là tính
-                            năng viết về những người mà mình đã gặp trong đời, theo kiểu danh bạ; và cuối cùng là tính năng
-                            viết lưu bút, gửi gắm những chia sẻ của mọi người đến mình. Và đó là toàn bộ về ý tưởng của mình
-                            trong ngày hôm nay. Hẹn mọi người bài viết mới trong thời gian sớm nhất.</p>
-                    </a>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
