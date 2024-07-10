@@ -18,4 +18,11 @@ class Home extends BaseModel
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
+
+    public function getEveryday()
+    {
+        $sql = "SELECT * FROM tunnaduong_everyday.timeline ORDER BY id DESC";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
 }
