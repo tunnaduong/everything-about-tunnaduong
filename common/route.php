@@ -9,11 +9,8 @@ try {
 
     // khu vực cần quan tâm -----------
     // bắt đầu định nghĩa ra các đường dẫn
-    $router->get('/', function () {
-        return "trang chủ";
-    });
 
-    $router->get("list-product", [App\Controllers\ProductController::class, 'index']);
+    $router->get("/", [App\Controllers\HomeController::class, 'index']);
 
 
 
