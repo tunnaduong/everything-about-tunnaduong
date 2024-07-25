@@ -13,7 +13,7 @@
                     <div class="content--card">
                         <a class=" no-color" href="https://everyday.tunnaduong.com" target="_blank">
                             <p id="everyday-date-{{ $diary->id }}" class="card--date">
-                                <?= $row['date'] ?>
+                                {{ $diary->date }}
                             </p>
                             <p class="card--summary">{{ $diary->title }}</p>
                         </a>

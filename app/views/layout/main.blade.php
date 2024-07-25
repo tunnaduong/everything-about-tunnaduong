@@ -12,6 +12,7 @@
     <script src="/static/js/typed.min.js"></script>
     <script src="/static/js/moment.min.js"></script>
     <script src="https://kit.fontawesome.com/be3d8625b2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body onclick="">
@@ -21,7 +22,7 @@
             <div class="header--secondary-container">
                 <span class="header--secondary" id="typed">&nbsp;</span>
             </div>
-            <h1 class="header--primary">Tunna Duong</h1>
+            <h1 class="header--primary pointer">Tunna Duong</h1>
         </div>
         <!-- The overlay -->
         <div class="overlay-below"></div>
@@ -29,7 +30,7 @@
             <!-- Overlay content -->
             <div class="filter"></div>
             <div class="overlay-content push-up">
-                <a href="#">Giới thiệu</a>
+                <a href="/about">Giới thiệu</a>
                 <a href="https://cv.tunnaduong.com">Những thứ mình làm</a>
                 <a href="#">Kết nối với mình</a>
                 <a href="#">Viết cho mình</a>

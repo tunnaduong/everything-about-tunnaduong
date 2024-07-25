@@ -21,7 +21,7 @@
                         <div class="person">
                             <img src="{{ $person->avatar }}">
                             <div class="person--detail">
-                                <h2>{{ $person->name }}</h2>
+                                <h2 class="pointer">{{ $person->name }}</h2>
                                 <span class="meet-time">Quen biết từ
                                     {{ date_format(date_create($person->met_from), 'm/Y') }} -
                                     {{ DateTime::createFromFormat('Y-m-d', $person->date_of_birth, new DateTimeZone('Asia/Ho_Chi_Minh'))->diff(new DateTime('now', new DateTimeZone('Asia/Ho_Chi_Minh')))->y }}

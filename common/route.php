@@ -16,6 +16,8 @@ try {
 
     $router->get("/nhung-nguoi-da-gap", [App\Controllers\HomeController::class, 'people']);
 
+    $router->get("/about", [App\Controllers\HomeController::class, 'about']);
+
 
     // khu vực cần quan tâm -----------
     //$router->get('test', [App\Controllers\ProductController::class, 'index']);

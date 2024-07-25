@@ -20,6 +20,11 @@ class HomeController extends BaseController
         return $this->render("pages.home.index", compact("diaries", "blog_posts"));
     }
 
+    public function about()
+    {
+        return $this->render("pages.about.index");
+    }
+
     public function everyday()
     {
         $diaries = $this->home->getEveryday();
