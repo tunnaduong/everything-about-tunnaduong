@@ -1,4 +1,3 @@
 /vendor/
 /storage/
-*.bladec
 env.php
