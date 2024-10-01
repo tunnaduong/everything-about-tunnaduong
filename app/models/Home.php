@@ -14,7 +14,7 @@ class Home extends BaseModel
 
     public function getBlog()
     {
-        $sql = "SELECT * FROM tunnaduong_blog.wp_posts WHERE post_type = 'post' AND post_name != 'quote' AND post_status != 'draft' ORDER BY id DESC LIMIT 3";
+        $sql = "SELECT * FROM tunnaduong_blog.wp_posts WHERE post_type = 'post' AND post_name != 'quote' AND post_status != 'draft' AND post_status != 'auto-draft' ORDER BY id DESC LIMIT 3;";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
