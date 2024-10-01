@@ -16,6 +16,7 @@
         <script src="/static/js/typed.min.js"></script>
         <script src="/static/js/moment.min.js"></script>
         <script src="/static/js/nprogress.js"></script>
+        <link rel='stylesheet' href='/static/css/nprogress.css' />
         <script src="https://kit.fontawesome.com/be3d8625b2.js" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
