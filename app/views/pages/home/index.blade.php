@@ -27,14 +27,14 @@
         </div>
         <div class="main--section-2">
             <h1>
-                <a href="https://blog.tunnaduong.com" class="no-color">
+                <a href="https://blog.tunnaduong.com" external class="no-color">
                     Bài viết<br />blog
                 </a>
             </h1>
             <div class="section--content">
                 @foreach ($blog_posts as $post)
                     <div class="content--card"">
-                        <a class=" no-color" href=" {{ $post->guid }}" target="_blank">
+                        <a class=" no-color" href=" {{ $post->guid }}" external target="_blank">
                             <p id="blog-date-{{ $post->ID }}" class="card--date">
                                 {{ $post->post_date }}
                             </p>
@@ -50,7 +50,7 @@
         </div>
         <div class="main--section-3">
             <h1>
-                <a href="/nhung-nguoi-da-gap/" class="no-color">
+                <a href="/nhung-nguoi-da-gap" class="no-color">
                     Những người<br />đã gặp
                 </a>
             </h1>

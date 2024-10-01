@@ -43,6 +43,19 @@ function toggleNav() {
   }
 }
 
+// hideNav
+function hideNav() {
+  $(".overlay-below").removeClass("full-height");
+  $(".menu-button-container").removeClass("menu-active");
+  $(".overlay-content").addClass("push-up");
+  $("#myNav").removeClass("o-show");
+  setInterval(() => {
+    $("#myNav").removeClass("o-show");
+  }, 1);
+  $("#myNav").removeClass("full-height");
+  $(".overlay-below").removeClass("full-height");
+}
+
 $("#typed").typed({
   strings: [
     "Tất cả mọi thứ về",
@@ -152,3 +165,56 @@ $("#alert-close-btn").on("click", function (e) {
 });
 
 moment.locale("vi");
+
+NProgress.start();
+NProgress.configure({ showSpinner: false });
+
+$(document).ready(function () {
+  NProgress.done();
+});
+
+$(document).ajaxComplete(function () {
+  NProgress.done();
+});
+
+function go(url) {
+  window.location.href = url;
+}
+
+$("html").on("click", "[external]", function (e) {
+  e.preventDefault(); // cancel click
+  // add class cursor pointer
+  var url = $(this).attr("href");
+  go(url);
+});
+
+$("html").on("click", "[href]", function (e) {
+  e.preventDefault(); // cancel click
+  var url = $(this).attr("href");
+  url = url.replace("#", "");
+  window.history.pushState({}, "", url);
+  NProgress.start();
+
+  $.ajax({
+    url: url + "?rel=page",
+    success: function (data) {
+      $("#root").html(data);
+    },
+  });
+});
+
+$("html").on("click", "[hide-nav]", function (e) {
+  e.preventDefault(); // cancel click
+  hideNav();
+});
+
+window.onpopstate = function () {
+  NProgress.start();
+
+  $.ajax({
+    url: document.location + "?rel=page",
+    success: function (data) {
+      $("#root").html(data);
+    },
+  });
+};
