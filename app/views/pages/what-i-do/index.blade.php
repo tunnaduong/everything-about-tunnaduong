@@ -5,7 +5,7 @@
         <div class="max-w-screen-lg m-auto">
             <h3
                 class="text-[var(--black)] font-light text-3xl tracking-[6px] uppercase relative transition-all duration-300 mb-10 before:absolute before:-bottom-[5px] before:left-0 before:h-[1px] before:content-[''] before:w-[60px] before:bg-[var(--black)] after:absolute after:-bottom-[7px] after:right-0 after:left-[56px] after:w-[6px] after:h-[6px] after:rounded-full after:bg-[var(--black)]">
-                Dự án gần đây
+                Lập trình
             </h3>
         </div>
         <div class="max-w-screen-lg m-auto">

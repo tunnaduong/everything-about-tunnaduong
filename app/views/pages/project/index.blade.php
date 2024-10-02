@@ -21,8 +21,10 @@
         <ul class="list-disc text-[var(--black)]">
             <li class="mb-2 ml-4"><span class="font-semibold">Ngày tạo:
                 </span>{{ date('m/Y', strtotime($project->created_at)) }}</li>
-            <li class="mb-2 ml-4"><span class="font-semibold">Công nghệ sử dụng:
-                </span>{{ $project->technologies }}</li>
+            @if (isset($project->technologies))
+                <li class="mb-2 ml-4"><span class="font-semibold">Công nghệ sử dụng:
+                    </span>{{ $project->technologies }}</li>
+            @endif
             @if (isset($project->github))
                 <li class="mb-2 ml-4"><span class="font-semibold">GitHub:
                     </span><a href="{{ $project->github }}" external>{{ $project->github }}</a></li>

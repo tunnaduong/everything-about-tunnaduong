@@ -40,9 +40,9 @@ class Home extends BaseModel
         return $this->loadAllRows();
     }
 
-    public function getAllProjects()
+    public function getAllITProjects()
     {
-        $sql = "SELECT * FROM tunnaduong_everything.projects ORDER BY created_at DESC";
+        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'IT' ORDER BY created_at DESC";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
