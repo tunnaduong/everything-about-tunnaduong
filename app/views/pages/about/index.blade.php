@@ -283,13 +283,15 @@
         <div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="" alt="" class="aspect-video object-cover">
+                    <img src="/static/img/projects/live.png" alt="Live Music Broadcast"
+                        class="aspect-video object-cover">
                     <div class="p-4 flex flex-col gap-2 justify-between h-full">
                         <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tên dự án</h2>
+                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Nghe nhạc cùng nhau qua
+                                Facebook Live</h2>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                Ngày đăng</p>
+                                09/2024</p>
                             <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
@@ -304,13 +306,14 @@
                     </div>
                 </div>
                 <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="" alt="" class="aspect-video object-cover">
+                    <img src="/static/img/projects/c4k60-app.png" alt="C4K60 App" class="aspect-video object-cover">
                     <div class="p-4 flex flex-col gap-2 justify-between h-full">
                         <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tên dự án</h2>
+                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">App Mobile lớp 12 Chuyên Nga
+                                - C4K60 Mobile</h2>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                Ngày đăng</p>
+                                04/2024</p>
                             <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
@@ -325,13 +328,14 @@
                     </div>
                 </div>
                 <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="" alt="" class="aspect-video object-cover">
+                    <img src="/static/img/projects/c4k60.png" alt="C4K60" class="aspect-video object-cover">
                     <div class="p-4 flex flex-col gap-2 justify-between h-full">
                         <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tên dự án</h2>
+                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Cổng thông tin điện tử lớp
+                                12 Chuyên Nga</h2>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                Ngày đăng</p>
+                                03/2024</p>
                             <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
@@ -346,13 +350,14 @@
                     </div>
                 </div>
                 <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="" alt="" class="aspect-video object-cover">
+                    <img src="/static/img/projects/everything.png" alt="Tunna Duong" class="aspect-video object-cover">
                     <div class="p-4 flex flex-col gap-2 justify-between h-full">
                         <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tên dự án</h2>
+                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tất cả mọi thứ về Tunna
+                                Duong</h2>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                Ngày đăng</p>
+                                09/2023</p>
                             <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
@@ -367,13 +372,14 @@
                     </div>
                 </div>
                 <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="" alt="" class="aspect-video object-cover">
+                    <img src="/static/img/projects/cyo.png" alt="CBH Youth Online" class="aspect-video object-cover">
                     <div class="p-4 flex flex-col gap-2 justify-between h-full">
                         <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tên dự án</h2>
+                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Thanh niên Chuyên Biên Hòa
+                                Online</h2>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                Ngày đăng</p>
+                                07/2022</p>
                             <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
@@ -388,13 +394,13 @@
                     </div>
                 </div>
                 <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="" alt="" class="aspect-video object-cover">
+                    <img src="/static/img/projects/tramcam.png" alt="Depression Test" class="aspect-video object-cover">
                     <div class="p-4 flex flex-col gap-2 justify-between h-full">
                         <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tên dự án</h2>
+                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Trắc nghiệm trầm cảm</h2>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                Ngày đăng</p>
+                                04/2022</p>
                             <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
