@@ -22,7 +22,8 @@ class HomeController extends BaseController
 
     public function about()
     {
-        return $this->render("pages.about.index");
+        $projects = $this->home->getTop6Projects();
+        return $this->render("pages.about.index", compact("projects"));
     }
 
     public function everyday()
@@ -37,9 +38,10 @@ class HomeController extends BaseController
         return $this->render("pages.people.index", compact("people"));
     }
 
-    public function project()
+    public function project($project_id)
     {
-        $project = $this->home;
+        $project = $this->home->getProject($project_id);
+        return $this->render("pages.project.index", compact("project"));
     }
 
     public function error404()

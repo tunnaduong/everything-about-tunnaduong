@@ -282,146 +282,37 @@
         </div>
         <div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="/static/img/projects/live.png" alt="Live Music Broadcast"
-                        class="aspect-video object-cover">
-                    <div class="p-4 flex flex-col gap-2 justify-between h-full">
-                        <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Nghe nhạc cùng nhau qua
-                                Facebook Live</h2>
-                            <p
-                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                09/2024</p>
-                            <p class="text-[var(--black)]">Website nghe nhạc cùng nhau qua Facebook là một
-                                nền tảng cho phép người xem nghe nhạc trực tuyến qua live stream của Facebook
-                            </p>
+                @foreach ($projects as $project)
+                    <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
+                        <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}"
+                            class="aspect-video object-cover">
+                        <div class="p-4 flex flex-col gap-2 justify-between h-full">
+                            <div>
+                                <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">{{ $project->name }}
+                                </h2>
+                                <p
+                                    class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                    {{ date('m/Y', strtotime($project->created_at)) }}</p>
+                                <p class="text-[var(--black)]">{{ $project->description }}
+                                </p>
+                            </div>
+                            <div class="flex justify-end">
+                                <button href="/projects/{{ $project->project_id }}"
+                                    class="text-[var(--black)] flex items-center group">Xem
+                                    chi
+                                    tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 256 512"
+                                        class="text-lg group-hover:translate-x-1 transition-all duration-100"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
-                                tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                    viewBox="0 0 256 512"
-                                    class="text-lg group-hover:translate-x-1 transition-all duration-100" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
-                                    </path>
-                                </svg></button></div>
                     </div>
-                </div>
-                <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="/static/img/projects/c4k60-app.png" alt="C4K60 App" class="aspect-video object-cover">
-                    <div class="p-4 flex flex-col gap-2 justify-between h-full">
-                        <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">App Mobile lớp 12 Chuyên Nga
-                                - C4K60 Mobile</h2>
-                            <p
-                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                04/2024</p>
-                            <p class="text-[var(--black)]">App di động đầu tiên dành cho học sinh lớp 12 Chuyên Nga C4K60
-                                giúp kết nối thầy cô và bạn bè với nhau
-                            </p>
-                        </div>
-                        <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
-                                tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                    viewBox="0 0 256 512"
-                                    class="text-lg group-hover:translate-x-1 transition-all duration-100" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
-                                    </path>
-                                </svg></button></div>
-                    </div>
-                </div>
-                <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="/static/img/projects/c4k60.png" alt="C4K60" class="aspect-video object-cover">
-                    <div class="p-4 flex flex-col gap-2 justify-between h-full">
-                        <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Cổng thông tin điện tử lớp
-                                12 Chuyên Nga</h2>
-                            <p
-                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                03/2024</p>
-                            <p class="text-[var(--black)]">Trang web lớp 12 Chuyên Nga C4K60 được tạo ra nhằm giảm bớt thời
-                                gian lục lọi thông tin trong nhóm lớp</p>
-                        </div>
-                        <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
-                                tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                    viewBox="0 0 256 512"
-                                    class="text-lg group-hover:translate-x-1 transition-all duration-100" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
-                                    </path>
-                                </svg></button></div>
-                    </div>
-                </div>
-                <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="/static/img/projects/everything.png" alt="Tunna Duong" class="aspect-video object-cover">
-                    <div class="p-4 flex flex-col gap-2 justify-between h-full">
-                        <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tất cả mọi thứ về Tunna
-                                Duong</h2>
-                            <p
-                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                09/2023</p>
-                            <p class="text-[var(--black)]">Website cá nhân tổng hợp tất cả mọi thứ về bản thân
-                            </p>
-                        </div>
-                        <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
-                                tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                    viewBox="0 0 256 512"
-                                    class="text-lg group-hover:translate-x-1 transition-all duration-100" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
-                                    </path>
-                                </svg></button></div>
-                    </div>
-                </div>
-                <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="/static/img/projects/cyo.png" alt="CBH Youth Online" class="aspect-video object-cover">
-                    <div class="p-4 flex flex-col gap-2 justify-between h-full">
-                        <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Thanh niên Chuyên Biên Hòa
-                                Online</h2>
-                            <p
-                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                07/2022</p>
-                            <p class="text-[var(--black)]">Website mạng xã hội học tập dành riêng cho học sinh trường THPT
-                                Chuyên Biên Hòa</p>
-                        </div>
-                        <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
-                                tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                    viewBox="0 0 256 512"
-                                    class="text-lg group-hover:translate-x-1 transition-all duration-100" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
-                                    </path>
-                                </svg></button></div>
-                    </div>
-                </div>
-                <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                    <img src="/static/img/projects/tramcam.png" alt="Depression Test" class="aspect-video object-cover">
-                    <div class="p-4 flex flex-col gap-2 justify-between h-full">
-                        <div>
-                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Trắc nghiệm trầm cảm</h2>
-                            <p
-                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                04/2022</p>
-                            <p class="text-[var(--black)]">Website khảo sát dạng trắc nghiệm giúp phát hiện sớm dấu hiệu
-                                trầm cảm</p>
-                        </div>
-                        <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
-                                tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                    viewBox="0 0 256 512"
-                                    class="text-lg group-hover:translate-x-1 transition-all duration-100" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
-                                    </path>
-                                </svg></button></div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

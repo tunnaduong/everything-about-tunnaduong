@@ -33,9 +33,16 @@ class Home extends BaseModel
         return $this->loadAllRows();
     }
 
+    public function getTop6Projects()
+    {
+        $sql = "SELECT * FROM tunnaduong_everything.projects ORDER BY created_at DESC LIMIT 6";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
+
     public function getProject($project_id)
     {
-        $sql = "SELECT * FROM projects WHERE id = '$project_id'";
+        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE project_id = '$project_id'";
         $this->setQuery($sql);
         return $this->loadRow();
     }
