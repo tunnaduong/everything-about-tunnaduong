@@ -458,7 +458,7 @@ footer {
 
   .switch--moon,
   .switch--sun {
-    zoom: 1;
+    zoom: 0.9999999;
   }
 
   .overlay-content {
