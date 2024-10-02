@@ -40,10 +40,10 @@
                 <div class="overlay-content push-up">
                     <a href="/about" hide-nav>Giới thiệu</a>
                     <a href="/what-i-do" hide-nav>Những thứ mình làm</a>
-                    <a href="#">Kết nối với mình</a>
-                    <a href="#">Viết cho mình</a>
-                    <a href="#">Báo lỗi</a>
-                    <a href="#">Ủng hộ</a>
+                    <a href="/connect-with-me" hide-nav>Kết nối với mình</a>
+                    <a href="/write-for-me" hide-nav>Viết cho mình</a>
+                    <a href="/report-a-problem" hide-nav>Báo lỗi</a>
+                    <a href="/donate" hide-nav>Ủng hộ</a>
                     <span class="version-number">Last updated: October 2024</span>
                     <div class="theme-switch-wrapper">
                         <label class="theme-switch" for="checkbox">

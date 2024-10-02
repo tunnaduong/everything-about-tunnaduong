@@ -44,6 +44,12 @@ class HomeController extends BaseController
         return $this->render("pages.project.index", compact("project"));
     }
 
+    public function what_i_do()
+    {
+        $projects = $this->home->getAllProjects();
+        return $this->render('pages.what-i-do.index', compact("projects"));
+    }
+
     public function error404()
     {
         return $this->render("pages.error.404");

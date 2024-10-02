@@ -24,8 +24,7 @@
     <section class="w-full md:mt-0 flex flex-col items-center justify-start">
         <div class="flex px-6 flex-col md:flex-row items-center mb-16 mt-16 justify-center max-w-screen-lg">
             <div class="w-72 md:w-1/3 mb-8 md:mb-0">
-                <img src="/static/img/tunna-walking.png" class="rounded-2xl" alt="A Walking Tunna" width="560"
-                    height="560">
+                <img src="/static/img/tunganh.jpg" class="rounded-2xl" alt="A Walking Tunna" width="560" height="560">
             </div>
             <div class="md:ml-16 md:w-2/3">
                 <h3

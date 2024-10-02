@@ -18,6 +18,8 @@ try {
 
     $router->get("/about", [App\Controllers\HomeController::class, 'about']);
 
+    $router->get("/what-i-do", [App\Controllers\HomeController::class, 'what_i_do']);
+
     $router->get("/projects/{project_id}", [App\Controllers\HomeController::class, 'project']);
 
 
