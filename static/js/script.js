@@ -170,10 +170,12 @@ NProgress.start();
 NProgress.configure({ showSpinner: false });
 
 $(document).ready(function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   NProgress.done();
 });
 
 $(document).ajaxComplete(function () {
+  // window.scrollTo({ top: 0, behavior: "smooth" });
   NProgress.done();
 });
 
@@ -198,6 +200,7 @@ $("html").on("click", "[href]", function (e) {
   $.ajax({
     url: url + "?rel=page",
     success: function (data) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
       $("#root").html(data);
     },
   });

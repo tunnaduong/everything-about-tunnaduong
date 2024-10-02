@@ -2,6 +2,17 @@
 
 @section('content')
     <div class="px-6 mt-10 max-w-screen-md my-0 mx-auto">
+        <button onclick="history.back();window.scrollTo({ top: 0, behavior: 'smooth' });"
+            class="text-[var(--black)] -ml-1 flex items-center group mb-3">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 512"
+                class="text-lg group-hover:-translate-x-1 transition-all duration-100 rotate-180" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
+                </path>
+            </svg>
+            Quay lại
+        </button>
         <h3 class="text-2xl leading-6 text-[var(--black)] font-semibold mb-1">{{ $project->name }}</h3>
         <p class="mb-4 text-sm italic text-[var(--black)]">{{ $project->role }}</p>
         <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}"
@@ -14,11 +25,11 @@
                 </span>{{ $project->technologies }}</li>
             @if (isset($project->github))
                 <li class="mb-2 ml-4"><span class="font-semibold">GitHub:
-                    </span><a href="{{ $project->github }}">{{ $project->github }}</a></li>
+                    </span><a href="{{ $project->github }}" external>{{ $project->github }}</a></li>
             @endif
             @if (isset($project->live_site))
                 <li class="mb-2 ml-4"><span class="font-semibold">Demo:
-                    </span><a href="{{ $project->live_site }}">{{ $project->live_site }}</a></li>
+                    </span><a href="{{ $project->live_site }}" external>{{ $project->live_site }}</a></li>
             @endif
         </ul>
     </div>

@@ -30,11 +30,11 @@
             </div>
             <div class="md:ml-16 md:w-2/3">
                 <h3
-                    class="text-[var(--black)] font-light text-3xl tracking-[6px] uppercase relative transition-all duration-300 mb-10 before:absolute before:-bottom-[5px] before:left-0 before:h-[1px] before:content-[''] before:w-[60px] before:bg-[var(--black)] after:absolute after:-bottom-[7px] after:right-0 after:left-[56px] after:w-[6px] after:h-[6px] after:rounded-full after:bg-[var(--black)]">
+                    class="text-[var(--black)] font-light text-3xl tracking-[6px] uppercase relative mb-10 before:absolute before:-bottom-[5px] before:left-0 before:h-[1px] before:content-[''] before:w-[60px] before:bg-[var(--black)] after:absolute after:-bottom-[7px] after:right-0 after:left-[56px] after:w-[6px] after:h-[6px] after:rounded-full after:bg-[var(--black)]">
                     Về bản thân
                 </h3>
                 <h3 class="text-[var(--black)] text-xl md:text-3xl font-medium mb-6">Kỹ năng</h3>
-                <ul class="text-[var(--black)] leading-7 transition-all duration-300 list-disc ml-8">
+                <ul class="text-[var(--black)] leading-7 list-disc ml-8">
                     <li><span class="font-bold">Ngôn ngữ lập trình: </span><span>Javascript, PHP, HTML, CSS</span></li>
                     <li><span class="font-bold">Thư viện và framework: </span><span>ReactJS, React Native, TailwindCSS,
                             Laravel, NodeJS, ExpressJS
