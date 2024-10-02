@@ -18,6 +18,8 @@ try {
 
     $router->get("/about", [App\Controllers\HomeController::class, 'about']);
 
+    $router->get("/projects/{project_id}", [App\Controllers\HomeController::class, 'project']);
+
 
     // khu vực cần quan tâm -----------
     //$router->get('test', [App\Controllers\ProductController::class, 'index']);
@@ -29,7 +31,9 @@ try {
 
     // Print out the value returned from the dispatched function
     echo $response;
+} catch (Phroute\Phroute\Exception\HttpRouteNotFoundException $e) {
+    return (new App\Controllers\HomeController)->error404();
+} catch (Phroute\Phroute\Exception\HttpMethodNotAllowedException $e) {
 } catch (Exception $e) {
-    var_dump($e->getMessage());
-    die;
+    echo $e->getMessage();
 }

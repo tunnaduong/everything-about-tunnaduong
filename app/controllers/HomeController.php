@@ -36,4 +36,14 @@ class HomeController extends BaseController
         $people = $this->home->getPeople();
         return $this->render("pages.people.index", compact("people"));
     }
+
+    public function project()
+    {
+        $project = $this->home;
+    }
+
+    public function error404()
+    {
+        return $this->render("pages.error.404");
+    }
 }

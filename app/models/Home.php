@@ -32,4 +32,11 @@ class Home extends BaseModel
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
+
+    public function getProject($project_id)
+    {
+        $sql = "SELECT * FROM projects WHERE id = '$project_id'";
+        $this->setQuery($sql);
+        return $this->loadRow();
+    }
 }
