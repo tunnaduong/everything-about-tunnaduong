@@ -40,6 +40,13 @@ class Home extends BaseModel
         return $this->loadAllRows();
     }
 
+    public function getAllProjects()
+    {
+        $sql = "SELECT * FROM tunnaduong_everything.projects ORDER BY created_at DESC";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
+
     public function getProject($project_id)
     {
         $sql = "SELECT * FROM tunnaduong_everything.projects WHERE project_id = '$project_id'";

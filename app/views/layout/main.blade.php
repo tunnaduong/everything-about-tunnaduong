@@ -39,7 +39,7 @@
                 <div class="filter"></div>
                 <div class="overlay-content push-up">
                     <a href="/about" hide-nav>Giới thiệu</a>
-                    <a href="https://cv.tunnaduong.com" external>Những thứ mình làm</a>
+                    <a href="/what-i-do" hide-nav>Những thứ mình làm</a>
                     <a href="#">Kết nối với mình</a>
                     <a href="#">Viết cho mình</a>
                     <a href="#">Báo lỗi</a>
