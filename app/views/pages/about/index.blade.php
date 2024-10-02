@@ -292,7 +292,9 @@
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
                                 09/2024</p>
-                            <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
+                            <p class="text-[var(--black)]">Website nghe nhạc cùng nhau qua Facebook là một
+                                nền tảng cho phép người xem nghe nhạc trực tuyến qua live stream của Facebook
+                            </p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
                                 tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -314,7 +316,9 @@
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
                                 04/2024</p>
-                            <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
+                            <p class="text-[var(--black)]">App di động đầu tiên dành cho học sinh lớp 12 Chuyên Nga C4K60
+                                giúp kết nối thầy cô và bạn bè với nhau
+                            </p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
                                 tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -336,7 +340,8 @@
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
                                 03/2024</p>
-                            <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
+                            <p class="text-[var(--black)]">Trang web lớp 12 Chuyên Nga C4K60 được tạo ra nhằm giảm bớt thời
+                                gian lục lọi thông tin trong nhóm lớp</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
                                 tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -358,7 +363,8 @@
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
                                 09/2023</p>
-                            <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
+                            <p class="text-[var(--black)]">Website cá nhân tổng hợp tất cả mọi thứ về bản thân
+                            </p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
                                 tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -380,7 +386,8 @@
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
                                 07/2022</p>
-                            <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
+                            <p class="text-[var(--black)]">Website mạng xã hội học tập dành riêng cho học sinh trường THPT
+                                Chuyên Biên Hòa</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
                                 tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -401,7 +408,8 @@
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
                                 04/2022</p>
-                            <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
+                            <p class="text-[var(--black)]">Website khảo sát dạng trắc nghiệm giúp phát hiện sớm dấu hiệu
+                                trầm cảm</p>
                         </div>
                         <div class="flex justify-end"><button class="text-[var(--black)] flex items-center group">Xem chi
                                 tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
