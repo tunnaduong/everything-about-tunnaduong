@@ -4,7 +4,7 @@
     <div class="px-6 flex flex-col mt-16 md:flex-row items-center justify-center max-w-screen-lg z-10 my-0 mx-auto">
         <div class="md:w-1/2 md:mr-5 order-2 md:order-1 text-center md:text-left">
             <h6
-                class="text-tertiary-dark dark:text-secondary-dark text-md lg:text-2xl font-medium mb-2 md:mb-5 text-[var(--black)]">
+                class="text-tertiary-dark text-[var(--black)] text-md lg:text-2xl font-medium mb-2 md:mb-5 text-[var(--black)]">
                 Xin chào, mình là</h6>
             <h1 class="text-primary text-4xl md:text-5xl lg:text-5xl font-bold mb-2 md:mb-5 text-[var(--black)]">
                 Dương
@@ -40,6 +40,261 @@
                             Laravel, NodeJS, ExpressJS
                     <li><span class="font-bold">Công cụ: </span><span>Git, Github, Nginx, MySQL, Cloudflare
                 </ul>
+            </div>
+        </div>
+        <div class="px-6 flex flex-col md:flex-row w-full max-w-screen-lg xl:gap-16">
+            <div class="w-full md:w-1/2">
+                <div class="w-full mb-16">
+                    <h3 class="text-2xl font-bold mb-4 text-[var(--black)]">Kinh nghiệm làm việc</h3>
+                    <ul>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                VNTEL</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                01/2022 - 05/2022</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Front-end Developer</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Được tham gia vào nhiều dự án lớn nhỏ liên kết với các công ty lớn và các cơ quan nhà
+                                    nước
+                                    của công ty đầu tiên thực tập với vai trò Lập trình viên Front-end</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Lần đầu tiên tham gia học công nghệ mới như React.js và React Native, tạo nền móng cho
+                                    sự
+                                    chuyên sâu vào hệ sinh thái React Javascript library</li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-1 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] dark:before:bg-tertiary before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                HAP Group</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                04/01/2022 - 07/01/2022</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Intern PHP Back-end
+                                Developer
+                            </p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Công ty Startup về CNTT đầu tiên nhận lời ứng tuyển qua TopCV</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Tuy rằng thời gian làm việc tại công ty khá ngắn ngủi nhưng cũng đã làm quen được với
+                                    công
+                                    việc của một PHP Developer thao tác nhiều với Wordpress CMS (Themes, Custom,
+                                    Functionalities...)</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Được tham gia cải tiến và test cho dự án landing website cho Công ty Dược phẩm Nam Hà
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full mb-16">
+                    <h3 class="text-2xl font-bold mb-4 text-[var(--black)]">Học vấn</h3>
+                    <ul>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                FPT Polytechnic Hà Nam</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                08/2023 - 09/2025</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Bằng Cử nhân Lập trình Web CNTT</li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Đại học FPT Hà Nội</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                09/2021 - 01/2023</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Chuyên ngành Kỹ thuật phần mềm</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Nghỉ học vì vấn đề sức khỏe</li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-1 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                THPT Chuyên Biên Hòa - Hà Nam</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                07/2018 - 07/2021</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Chuyên ngành Ngôn ngữ Nga</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Tốt nghiệp loại giỏi. GPA 8.2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <div class="w-full mb-16">
+                    <h3 class="text-2xl font-bold mb-4 text-[var(--black)]">Giải thưởng</h3>
+                    <ul>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Quiz Bees 2024 Vòng loại Cơ sở</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                09/2024</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Giải nhì</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải nhì vòng loại cơ sở trong cuộc thi Quiz Bees 2024 dành cho sinh viên trường
+                                    FPT Polytechnic Hà Nam
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                FPT Polytechnic Hackathon Front-end Master 2024</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                09/2024</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Giải khuyến khích</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải khuyến khích trong cuộc thi Hackathon Front-end Master 2024 dành cho sinh viên
+                                    CNTT trường FPT Polytechnic
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Cuộc thi trình diễn cổ phục FPT Polytechnic</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                08/2024</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Giải nhất</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải nhất trong cuộc thi trình diễn cổ phục Sắc ngàn năm - Tinh hoa Việt FPT
+                                    Polytechnic
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-1 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] dark:before:bg-tertiary before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Giải thưởng sinh viên xuất sắc FPT Polytechnic</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                06/2024</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Danh hiệu Ong vàng
+                            </p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải thưởng Ong vàng học kỳ mùa xuân năm 2024 dành cho sinh viên top 1 của trường
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full mb-16">
+                    <h3 class="text-2xl font-bold mb-4 text-[var(--black)]">Hoạt động</h3>
+                    <ul>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                JS Club - Japanese Software Engineers</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                04/2022 - 02/2023</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Thành viên ban chuyên môn
+                            </p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đã tham gia giảng dạy lập trình web HTML, CSS, Javascript cho các thành viên từ các ban
+                                    khác trong Câu lạc bộ
+                                </li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đã tham gia nhiều cuộc thi lập trình lớn nhỏ của CLB tổ chức cho tất cả các sinh viên
+                                    trường và nội bộ CLB
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-1 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                CLB Bóng bàn THPT Chuyên Biên Hòa</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                03/2021 - 05/2021</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Chủ tịch</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Là người sáng lập câu lạc bộ bóng bàn của trường
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full md:mt-0 px-6 md:px-8 mb-16">
+        <div class="max-w-screen-lg m-auto">
+            <h3
+                class="text-[var(--black)] font-light text-3xl tracking-[6px] uppercase relative transition-all duration-300 mb-10 before:absolute before:-bottom-[5px] before:left-0 before:h-[1px] before:content-[''] before:w-[60px] before:bg-[var(--black)] after:absolute after:-bottom-[7px] after:right-0 after:left-[56px] after:w-[6px] after:h-[6px] after:rounded-full after:bg-[var(--black)]">
+                Dự án gần đây
+            </h3>
+        </div>
+        <div class="max-w-screen-lg m-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div
+                    class="bg-secondary-dark dark:bg-tertiary-dark transition-all duration-300 dark:text-secondary flex flex-col gap-2 overflow-hidden">
+                    <img src="" alt="" class="aspect-video object-cover">
+                    <div class="p-4 flex flex-col gap-2 justify-between h-full">
+                        <div>
+                            <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">Tên dự án</h2>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                Ngày đăng</p>
+                            <p class="text-[var(--black)]">Mô tả ngắn dự án</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
