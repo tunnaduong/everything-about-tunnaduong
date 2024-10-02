@@ -456,6 +456,11 @@ footer {
     zoom: 0.9999999;
   }
 
+  .switch--moon,
+  .switch--sun {
+    zoom: 1;
+  }
+
   .overlay-content {
     margin-top: 10px;
   }

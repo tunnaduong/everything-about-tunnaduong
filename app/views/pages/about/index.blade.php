@@ -3,8 +3,7 @@
 @section('content')
     <div class="px-6 flex flex-col mt-16 md:flex-row items-center justify-center max-w-screen-lg z-10 my-0 mx-auto">
         <div class="md:w-1/2 md:mr-5 order-2 md:order-1 text-center md:text-left">
-            <h6
-                class="text-tertiary-dark text-[var(--black)] text-md lg:text-2xl font-medium mb-2 md:mb-5 text-[var(--black)]">
+            <h6 class="text-tertiary-dark text-md lg:text-2xl font-medium mb-2 md:mb-5 text-[var(--black)]">
                 Xin chào, mình là</h6>
             <h1 class="text-primary text-4xl md:text-5xl lg:text-5xl font-bold mb-2 md:mb-5 text-[var(--black)]">
                 Dương
