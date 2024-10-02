@@ -453,7 +453,7 @@ footer {
   }
 
   * {
-    zoom: 1;
+    zoom: 0.99;
   }
 
   .overlay-content {
