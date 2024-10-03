@@ -3,11 +3,13 @@
 @section('content')
     <center class="mt-10">
         <img src="/static/img/tunganh.jpg" width="150" height="150" alt="Tùng Anh" class="rounded-full">
-        <h1 class="font-extrabold text-[30px] mt-4">Dương Tùng Anh</h1>
-        <p class="max-w-md">Mình là Tùng Anh, tác giả của nhiều thứ. Mình thiết kế và xây dựng website. Mình cũng rất thích
+        <h1 class="font-extrabold text-[30px] mt-4 text-[var(--black)]">Dương Tùng Anh</h1>
+        <p class="max-w-md text-[var(--black)] px-6">Mình là Tùng Anh, tác giả của nhiều thứ. Mình thiết kế và xây dựng
+            website.
+            Mình cũng rất thích
             chơi bóng bàn.
         </p>
-        <h3 class="font-medium text-[20px] my-4">Hãy cùng kết nối!</h3>
+        <h3 class="font-medium text-[20px] my-4 text-[var(--black)]">Hãy cùng kết nối!</h3>
         <div class="flex flex-col items-center">
             <a href="tel:+84707006421" external id="btn-call" class="social-btn uppercase">
                 <i class="fas fa-phone-alt"></i>
