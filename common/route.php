@@ -20,6 +20,8 @@ try {
 
     $router->get("/what-i-do", [App\Controllers\HomeController::class, 'what_i_do']);
 
+    $router->get("/connect-with-me", [App\Controllers\HomeController::class, 'connect_with_me']);
+
     $router->get("/projects/{project_id}", [App\Controllers\HomeController::class, 'project']);
 
 

@@ -57,6 +57,11 @@ class HomeController extends BaseController
         return $this->render('pages.what-i-do.index', compact("projects", "engineering_projects", "design_projects", "filming_projects"));
     }
 
+    public function connect_with_me()
+    {
+        return $this->render("pages.connect-with-me.index");
+    }
+
     public function error404()
     {
         return $this->render("pages.error.404");
