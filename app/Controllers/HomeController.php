@@ -41,6 +41,10 @@ class HomeController extends BaseController
     public function project($project_id)
     {
         $project = $this->home->getProject($project_id);
+        // check if project is not found
+        if (!$project) {
+            return $this->error404();
+        }
         return $this->render("pages.project.index", compact("project"));
     }
 

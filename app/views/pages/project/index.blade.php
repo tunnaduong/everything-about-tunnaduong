@@ -15,8 +15,15 @@
         </button>
         <h3 class="text-2xl leading-6 text-[var(--black)] font-semibold mb-1">{{ $project->name }}</h3>
         <p class="mb-4 text-sm italic text-[var(--black)]">{{ $project->role }}</p>
-        <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}"
-            class="w-full rounded-3xl border-2 border-[var(--black)] mb-6">
+        @if (isset($project->custom_thumbnail_html))
+            <div class="mb-6"
+                style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                {!! $project->custom_thumbnail_html !!}
+            </div>
+        @else
+            <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}"
+                class="w-full rounded-3xl border-2 border-[var(--black)] mb-6">
+        @endif
         <p class="mb-4 text-[var(--black)]">{{ $project->description }}</p>
         <ul class="list-disc text-[var(--black)]">
             <li class="mb-2 ml-4"><span class="font-semibold">Ngày tạo:
