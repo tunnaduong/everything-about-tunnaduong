@@ -47,6 +47,27 @@ class Home extends BaseModel
         return $this->loadAllRows();
     }
 
+    public function getAllEngineeringProjects()
+    {
+        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'Engineer' ORDER BY created_at DESC";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
+
+    public function getAllDesignProjects()
+    {
+        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'Design' ORDER BY created_at DESC";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
+
+    public function getAllFilmingProjects()
+    {
+        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'Film' ORDER BY created_at DESC";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
+
     public function getProject($project_id)
     {
         $sql = "SELECT * FROM tunnaduong_everything.projects WHERE project_id = '$project_id'";

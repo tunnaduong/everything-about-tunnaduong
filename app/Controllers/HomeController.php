@@ -47,7 +47,10 @@ class HomeController extends BaseController
     public function what_i_do()
     {
         $projects = $this->home->getAllITProjects();
-        return $this->render('pages.what-i-do.index', compact("projects"));
+        $engineering_projects = $this->home->getAllEngineeringProjects();
+        $design_projects = $this->home->getAllDesignProjects();
+        $filming_projects = $this->home->getAllFilmingProjects();
+        return $this->render('pages.what-i-do.index', compact("projects", "engineering_projects", "design_projects", "filming_projects"));
     }
 
     public function error404()
