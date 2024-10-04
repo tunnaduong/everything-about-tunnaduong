@@ -1,0 +1,65 @@
+@extends('layout.main')
+
+@section('content')
+    <div class="mt-6 max-w-md mx-auto px-4">
+        <form action="" method="POST">
+            <div class="mt-3">
+                <label for="name" class="text-[var(--black)]">*Họ và tên:</label><br>
+                <input class="input" type="text" name="name" id="name" required>
+            </div>
+            <div class="mt-3">
+                <label for="email" class="text-[var(--black)]">Email:</label><br>
+                <input class="input" type="email" name="email" id="email">
+            </div>
+            <div class="mt-3">
+                <label for="come_from" class="text-[var(--black)]">Đến từ:</label><br>
+                <input class="input" type="text" name="come_from" id="come_from">
+            </div>
+            <div class="mt-3">
+                <label for="web" class="text-[var(--black)]">Trang web của bạn (FB, YouTube,
+                    Instagram,...):</label><br>
+                <input class="input" type="text" name="web" id="web">
+            </div>
+            <div class="mt-3">
+                <p class="text-[var(--black)]">Bạn là:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" class="text-[var(--black)]">Nam</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" class="text-[var(--black)]">Nữ</label>
+            </div>
+            <div class="mt-3">
+                <p class="text-[var(--black)]">Chúng mình từng gặp nhau chưa?</p>
+                <input type="radio" id="olog" name="have_we_met" value="only_look_or_greet">
+                <label for="olog" class="text-[var(--black)]">Mới chỉ chào hỏi/nhìn từ xa thôi</label><br>
+                <input type="radio" id="talked" name="have_we_met" value="talked">
+                <label for="talked" class="text-[var(--black)]">Nói chuyện với nhau rồi</label><br>
+                <input type="radio" id="notyet" name="have_we_met" value="notyet">
+                <label for="notyet" class="text-[var(--black)]">Chưa</label>
+            </div>
+            <div class="mt-3">
+                <label for="why_we_met" class="text-[var(--black)]">Sao mình quen nhau vậy?</label><br>
+                <input class="input" type="text" name="why_we_met" id="why_we_met">
+            </div>
+            <div class="mt-3">
+                <label for="our_memory" class="text-[var(--black)]">Một kỉ niệm giữa chúng mình:</label><br>
+                <input class="input" type="text" name="our_memory" id="our_memory">
+            </div>
+            <div class="mt-3">
+                <label for="i_am" class="text-[var(--black)]">Đối với bạn, tớ là một người:</label><br>
+                <input class="input" type="text" name="i_am" id="i_am">
+            </div>
+            <div class="mt-3">
+                <label for="dislike" class="text-[var(--black)]">Điều bạn không thích ở tớ:</label><br>
+                <input class="input" type="text" name="dislike" id="dislike">
+            </div>
+            <div class="mt-3">
+                <label for="some_lines" class="text-[var(--black)]">Vài dòng cho tớ:</label><br>
+                <input class="input" type="text" name="some_lines" id="some_lines">
+            </div>
+            <div class="mt-3">
+                <label for="signature_box" class="text-[var(--black)]">Chữ ký của bạn:</label><br>
+                <canvas class="signature_box" id="signature_box" height="180" style="touch-action: none;"></canvas>
+            </div>
+        </form>
+    </div>
+@endsection

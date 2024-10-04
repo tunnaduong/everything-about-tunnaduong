@@ -62,6 +62,11 @@ class HomeController extends BaseController
         return $this->render("pages.connect-with-me.index");
     }
 
+    public function write_for_me()
+    {
+        return $this->render("pages.write-for-me.index");
+    }
+
     public function error404()
     {
         return $this->render("pages.error.404");
