@@ -236,15 +236,15 @@ function resizeCanvas() {
   signaturePad.clear(); // otherwise isEmpty() might return incorrect value
 }
 
-var dwidth = $(window).width();
-
-$(window).resize(function () {
-  var wwidth = $(window).width();
-  if (dwidth !== wwidth) {
-    dwidth = $(window).width();
+function resizeWidth() {
+  var existingWidth = $(document).data("resize-width");
+  var newWidth = $(document).width();
+  if (existingWidth != newWidth) {
     resizeCanvas();
-    // console.log("resize");
+    $(document).data("resize-width", newWidth);
   }
-});
+}
+
+$(window).resize(resizeWidth);
 
 resizeCanvas();
