@@ -20,6 +20,7 @@
         <script src="https://kit.fontawesome.com/be3d8625b2.js" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
     </head>
 @endif
 

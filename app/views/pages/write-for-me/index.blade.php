@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="mt-6 max-w-md mx-auto px-4">
-        <form action="" method="POST">
+        <form action="" method="POST" id="form_luubut">
             <div class="mt-3">
                 <label for="name" class="text-[var(--black)]">*Họ và tên:</label><br>
                 <input class="input" type="text" name="name" id="name" required>
@@ -74,6 +74,10 @@
                     style="background: #3498db;border-radius: 28px;color: #ffffff;font-size: 14px;padding: 5px 10px 5px 10px;text-decoration: none;-webkit-transition: background 0.2s ease, color 0.2s ease;transition: background 0.2s ease, color 0.2s ease"
                     id="clear" onclick="signaturePad.clear();">Xoá</button>
                 <input type="hidden" name="signature_data" id="dulieu">
+            </div>
+            <div class="mt-3">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAAwrQ4yUSma0J-NO"></div>
+                <a id="send-btn" class="btn">Gửi <i class="fas fa-paper-plane"></i></a>
             </div>
         </form>
     </div>

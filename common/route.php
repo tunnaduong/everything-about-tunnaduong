@@ -22,11 +22,39 @@ try {
 
     $router->get("/connect-with-me", [App\Controllers\HomeController::class, 'connect_with_me']);
 
-    $router->get("/write-for-me", [App\Controllers\HomeController::class, 'write_for_me']);
+    $router->any("/write-for-me", [App\Controllers\HomeController::class, 'write_for_me']);
 
 
     $router->get("/projects/{project_id}", [App\Controllers\HomeController::class, 'project']);
 
+    // Add a POST route with an inline function
+    $router->post("/verify-turnstile", function () {
+        $token = $_POST['token'];
+        $secretKey = TURNSTILE_SECRET_KEY; // Replace with your Cloudflare Turnstile secret key
+
+        // Prepare data for the request
+        $data = [
+            'secret' => $secretKey,
+            'response' => $token
+        ];
+
+        // Initialize cURL
+        $ch = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+
+        // Execute the request
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        // Decode the response
+        $result = json_decode($response, true);
+
+        // Return the result as JSON
+        header('Content-Type: application/json');
+        echo json_encode($result);
+    });
 
     // khu vực cần quan tâm -----------
     //$router->get('test', [App\Controllers\ProductController::class, 'index']);
