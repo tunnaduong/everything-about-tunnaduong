@@ -56,9 +56,24 @@
                 <label for="some_lines" class="text-[var(--black)]">Vài dòng cho tớ:</label><br>
                 <input class="input" type="text" name="some_lines" id="some_lines">
             </div>
-            <div class="mt-3">
+            <div class="mt-3 max-h-[200px]">
                 <label for="signature_box" class="text-[var(--black)]">Chữ ký của bạn:</label><br>
-                <canvas class="signature_box" id="signature_box" height="180" style="touch-action: none;"></canvas>
+                <canvas class="signature_box" id="signature_box" height="300" style="touch-action: none;"></canvas>
+                <button type="button"
+                    style="background: #3498db;border-radius: 28px;color: #ffffff;font-size: 14px;padding: 5px 10px 5px 10px;text-decoration: none;-webkit-transition: background 0.2s ease, color 0.2s ease;transition: background 0.2s ease, color 0.2s ease"
+                    id="draw"
+                    onclick="var ctx = canvas.getContext('2d');
+    console.log(ctx.globalCompositeOperation);
+    ctx.globalCompositeOperation = 'source-over';">Vẽ</button>
+                <button type="button"
+                    style="background: #3498db;border-radius: 28px;color: #ffffff;font-size: 14px;padding: 5px 10px 5px 10px;text-decoration: none;-webkit-transition: background 0.2s ease, color 0.2s ease;transition: background 0.2s ease, color 0.2s ease"
+                    id="erase"
+                    onclick="var ctx = canvas.getContext('2d');
+    ctx.globalCompositeOperation = 'destination-out';">Tẩy</button>
+                <button type="button"
+                    style="background: #3498db;border-radius: 28px;color: #ffffff;font-size: 14px;padding: 5px 10px 5px 10px;text-decoration: none;-webkit-transition: background 0.2s ease, color 0.2s ease;transition: background 0.2s ease, color 0.2s ease"
+                    id="clear" onclick="signaturePad.clear();">Xoá</button>
+                <input type="hidden" name="signature_data" id="dulieu">
             </div>
         </form>
     </div>

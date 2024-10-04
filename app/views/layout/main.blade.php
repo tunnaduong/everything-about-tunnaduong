@@ -19,6 +19,7 @@
         <link rel='stylesheet' href='/static/css/nprogress.css' />
         <script src="https://kit.fontawesome.com/be3d8625b2.js" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
     </head>
 @endif
 
