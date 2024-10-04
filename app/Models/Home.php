@@ -74,4 +74,11 @@ class Home extends BaseModel
         $this->setQuery($sql);
         return $this->loadRow();
     }
+
+    public function writeForMe($name, $email, $come_from, $web, $gender, $have_we_met, $why_we_met, $our_memory, $i_am, $dislike, $some_lines, $signature)
+    {
+        $sql = "INSERT INTO tunnaduong_luubut.luubut (name, email, comefrom, web, gender, havewemet, whywemet, ourmemory, iam, dislike, somelines, signature_data) VALUES ('$name', '$email', '$come_from', '$web', '$gender', '$have_we_met', '$why_we_met', '$our_memory', '$i_am', '$dislike', '$some_lines', '$signature')";
+        $this->setQuery($sql);
+        return $this->execute();
+    }
 }

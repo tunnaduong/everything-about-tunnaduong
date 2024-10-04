@@ -257,6 +257,11 @@ document.addEventListener("DOMContentLoaded", function () {
       return false;
     }
 
+    if (signaturePad.isEmpty()) {
+      alert("Hãy vẽ chữ ký.");
+      return false;
+    }
+
     var data = signaturePad.toDataURL("image/png");
     console.log(data);
     document.getElementById("dulieu").value = data;
