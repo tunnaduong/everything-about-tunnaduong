@@ -236,5 +236,15 @@ function resizeCanvas() {
   signaturePad.clear(); // otherwise isEmpty() might return incorrect value
 }
 
-window.addEventListener("resize", resizeCanvas);
+var dwidth = $(window).width();
+
+$(window).resize(function () {
+  var wwidth = $(window).width();
+  if (dwidth !== wwidth) {
+    dwidth = $(window).width();
+    resizeCanvas();
+    // console.log("resize");
+  }
+});
+
 resizeCanvas();
