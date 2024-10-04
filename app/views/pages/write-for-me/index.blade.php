@@ -56,7 +56,7 @@
                 <label for="some_lines" class="text-[var(--black)]">Vài dòng cho tớ:</label><br>
                 <input class="input" type="text" name="some_lines" id="some_lines">
             </div>
-            <div class="mt-3 max-h-[200px]">
+            <div class="mt-3">
                 <label for="signature_box" class="text-[var(--black)]">Chữ ký của bạn:</label><br>
                 <canvas class="signature_box" id="signature_box" height="300" style="touch-action: none;"></canvas>
                 <button type="button"
