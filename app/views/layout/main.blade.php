@@ -131,6 +131,8 @@
         </center>
         <script src="/static/js/script.js"></script>
     @endif
+
+    @stack('scripts')
 </body>
 
 </html>

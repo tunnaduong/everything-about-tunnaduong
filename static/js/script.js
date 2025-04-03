@@ -1,26 +1,6 @@
 // Scripts for "Everything about Tunna Duong" website.
 // © Copyright 2022 Tunna Duong. All rights reserved.
 
-// const originalNum = parseInt($("#additional-number").text());
-// const newNum = originalNum + 1;
-
-// function responsivePeopleSection() {
-//   var sectionWidth = $(".main--section-3").width();
-//   var flag = 0;
-//   if (sectionWidth < 250 && flag == 0) {
-//     flag = 1;
-//     $(".people-i-met > img").last().css("display", "none");
-//     $("#additional-number").text("+" + newNum);
-//   } else {
-//     $(".people-i-met > img").last().css("display", "block");
-//     $("#additional-number").text("+" + originalNum);
-//   }
-// }
-
-// responsivePeopleSection();
-
-// $(window).on("resize", responsivePeopleSection);
-
 var timer = null;
 
 function toggleNav() {
@@ -228,81 +208,6 @@ window.onpopstate = function () {
     },
   });
 };
-
-try {
-  var canvas = document.getElementById("signature_box");
-
-  var signaturePad = new SignaturePad(canvas, {
-    backgroundColor: "rgb(255, 255, 255)", // necessary for saving image as JPEG; can be removed is only saving as PNG or SVG
-  });
-
-  function resizeCanvas() {
-    const ratio = Math.max(window.devicePixelRatio || 1, 1);
-    canvas.width = canvas.offsetWidth * ratio;
-    canvas.height = canvas.offsetHeight * ratio;
-    canvas.getContext("2d").scale(ratio, ratio);
-    signaturePad.clear(); // otherwise isEmpty() might return incorrect value
-  }
-
-  function resizeWidth() {
-    var existingWidth = $(document).data("resize-width");
-    var newWidth = $(document).width();
-    if (existingWidth != newWidth) {
-      resizeCanvas();
-      $(document).data("resize-width", newWidth);
-    }
-  }
-
-  $(window).resize(resizeWidth);
-
-  resizeCanvas();
-} catch (err) {
-  console.log(err);
-}
-
-async function sendWriting() {
-  var x = document.forms["form_luubut"]["name"].value;
-  if (x == "") {
-    alert("Hãy điền tên vì trường này rất quan trọng với mình.");
-    return false;
-  }
-
-  if (signaturePad.isEmpty()) {
-    alert("Hãy vẽ chữ ký.");
-    return false;
-  }
-
-  var data = signaturePad.toDataURL("image/png");
-  console.log(data);
-  document.getElementById("dulieu").value = data;
-
-  // Get the Turnstile token
-  var turnstileToken = document.getElementsByName("cf-turnstile-response")[0]
-    .value;
-
-  // Verify the Turnstile token
-  var response = await fetch("/verify-turnstile", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: new URLSearchParams({ token: turnstileToken }).toString(),
-  });
-
-  var result = await response.json();
-
-  if (result.success) {
-    // If verification is successful, submit the form
-    document.getElementById("form_luubut").submit();
-    return true;
-  } else {
-    // Handle verification failure
-    alert("Vui lòng xác minh rằng bạn không phải là robot.");
-    return false;
-  }
-}
-// Attach the sendWriting function to the form submission or a button click
-document.getElementById("send-btn").addEventListener("click", sendWriting);
 
 const getCommit = async () => {
   try {
