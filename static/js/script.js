@@ -154,11 +154,6 @@ $(document).ready(function () {
   $alert.on("mouseenter", function () {
     clearTimeout(hideTimeout);
   });
-
-  // Optional: hide it immediately when mouse leaves
-  $alert.on("mouseleave", function () {
-    $alert.slideUp("slow");
-  });
 });
 
 $(".under-construction-badge").on("click", function (e) {
