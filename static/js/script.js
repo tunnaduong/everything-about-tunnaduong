@@ -235,30 +235,30 @@ try {
   var signaturePad = new SignaturePad(canvas, {
     backgroundColor: "rgb(255, 255, 255)", // necessary for saving image as JPEG; can be removed is only saving as PNG or SVG
   });
+
+  function resizeCanvas() {
+    const ratio = Math.max(window.devicePixelRatio || 1, 1);
+    canvas.width = canvas.offsetWidth * ratio;
+    canvas.height = canvas.offsetHeight * ratio;
+    canvas.getContext("2d").scale(ratio, ratio);
+    signaturePad.clear(); // otherwise isEmpty() might return incorrect value
+  }
+
+  function resizeWidth() {
+    var existingWidth = $(document).data("resize-width");
+    var newWidth = $(document).width();
+    if (existingWidth != newWidth) {
+      resizeCanvas();
+      $(document).data("resize-width", newWidth);
+    }
+  }
+
+  $(window).resize(resizeWidth);
+
+  resizeCanvas();
 } catch (err) {
   console.log(err);
 }
-
-function resizeCanvas() {
-  const ratio = Math.max(window.devicePixelRatio || 1, 1);
-  canvas.width = canvas.offsetWidth * ratio;
-  canvas.height = canvas.offsetHeight * ratio;
-  canvas.getContext("2d").scale(ratio, ratio);
-  signaturePad.clear(); // otherwise isEmpty() might return incorrect value
-}
-
-function resizeWidth() {
-  var existingWidth = $(document).data("resize-width");
-  var newWidth = $(document).width();
-  if (existingWidth != newWidth) {
-    resizeCanvas();
-    $(document).data("resize-width", newWidth);
-  }
-}
-
-$(window).resize(resizeWidth);
-
-resizeCanvas();
 
 async function sendWriting() {
   var x = document.forms["form_luubut"]["name"].value;
