@@ -88,7 +88,7 @@
                     <a href="/write-for-me" hide-nav>Viết cho mình</a>
                     <a href="https://forms.gle/qjv83iVfTey5zVTg7" external hide-nav>Báo lỗi</a>
                     <a href="https://c4k60.com/sponsors" external hide-nav>Ủng hộ</a>
-                    <span class="version-number">Last updated: October 2024</span>
+                    <span class="version-number">Last updated: <span id="last_updated">October 2024</span></span>
                     <div class="theme-switch-wrapper">
                         <label class="theme-switch" for="checkbox">
                             <input type="checkbox" id="checkbox" />

@@ -299,3 +299,26 @@ async function sendWriting() {
 }
 // Attach the sendWriting function to the form submission or a button click
 document.getElementById("send-btn").addEventListener("click", sendWriting);
+
+const getCommit = async () => {
+  try {
+    const res = await fetch(
+      "https://api.github.com/repos/tunnaduong/everything-about-tunnaduong/commits/main?client_id=&client_secret="
+    );
+    const data = await res.json();
+    return data.commit.author.date;
+  } catch (error) {}
+};
+
+async function getCommitTime() {
+  const lastUpdate = document.querySelector("#last_updated");
+  const lastUpdateTime = await getCommit();
+
+  lastUpdate.textContent =
+    "Cập nhật lần cuối: " +
+    moment(lastUpdateTime)
+      .tz("Asia/Ho_Chi_Minh") // Set to Vietnam timezone (UTC+7)
+      .format("h:mm A, DD/MM/YYYY");
+}
+
+getCommitTime();
