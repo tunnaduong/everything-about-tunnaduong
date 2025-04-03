@@ -142,11 +142,23 @@ jQuery.expr.filters.offscreen = function (el) {
 };
 
 $(document).ready(function () {
-  $("#floating-footer-alert")
-    .delay("4000")
-    .slideToggle("slow", function () {
-      $("#floating-footer-alert").hide();
-    });
+  const $alert = $("#floating-footer-alert");
+  let hideTimeout;
+
+  // Start a delayed hide
+  hideTimeout = setTimeout(() => {
+    $alert.slideUp("slow");
+  }, 4000);
+
+  // Cancel hide on hover
+  $alert.on("mouseenter", function () {
+    clearTimeout(hideTimeout);
+  });
+
+  // Optional: hide it immediately when mouse leaves
+  $alert.on("mouseleave", function () {
+    $alert.slideUp("slow");
+  });
 });
 
 $(".under-construction-badge").on("click", function (e) {
