@@ -7,7 +7,7 @@ class Home extends BaseModel
 
     public function getDiary()
     {
-        $sql = "SELECT * FROM tunnaduong_everyday.timeline ORDER BY id DESC LIMIT 3";
+        $sql = "SELECT * FROM everyday.timeline ORDER BY id DESC LIMIT 3";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
@@ -21,7 +21,7 @@ class Home extends BaseModel
 
     public function getEveryday()
     {
-        $sql = "SELECT * FROM tunnaduong_everyday.timeline ORDER BY id DESC";
+        $sql = "SELECT * FROM everyday.timeline ORDER BY id DESC";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
@@ -77,7 +77,7 @@ class Home extends BaseModel
 
     public function writeForMe($name, $email, $come_from, $web, $gender, $have_we_met, $why_we_met, $our_memory, $i_am, $dislike, $some_lines, $signature)
     {
-        $sql = "INSERT INTO tunnaduong_luubut.luubut (name, email, comefrom, web, gender, havewemet, whywemet, ourmemory, iam, dislike, somelines, signature_data) VALUES ('$name', '$email', '$come_from', '$web', '$gender', '$have_we_met', '$why_we_met', '$our_memory', '$i_am', '$dislike', '$some_lines', '$signature')";
+        $sql = "INSERT INTO luubut.luubut (name, email, comefrom, web, gender, havewemet, whywemet, ourmemory, iam, dislike, somelines, signature_data) VALUES ('$name', '$email', '$come_from', '$web', '$gender', '$have_we_met', '$why_we_met', '$our_memory', '$i_am', '$dislike', '$some_lines', '$signature')";
         $this->setQuery($sql);
         return $this->execute();
     }

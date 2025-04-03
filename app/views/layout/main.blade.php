@@ -40,6 +40,34 @@
 
 <body onclick="">
     @if ($rel != 'page')
+    <!-- Construction badge: <img src="./static/img/under-construction.png" class="under-construction-badge" /> -->
+  <img
+      src="/static/img/under-construction.png"
+      class="under-construction-badge"
+      alt="Under construction badge"
+      title="Bạn muốn góp ý cho website? Bấm vào ảnh nhé..."
+    />
+  <!-- Popup alert showing Figma design -->
+  <div id="floating-footer-alert">
+      <span id="alert-close-btn">&times;</span>
+      <h3>👋 Xin chào đằng ấy!</h3>
+      <p>
+        Trang web hiện tại vẫn đang được phát triển và hoàn thiện. Tuy nhiên bạn
+        cũng có thể xem qua bản thiết kế của trang web này tại:
+        <a
+          href="https://www.figma.com/file/cHrOJ4ASoJUWielefafzzC/Life-Of-Tunna"
+          target="_blank"
+          >Figma</a
+        >
+        để dễ hình dung. Và nếu có thể thì cho mình xin một feedback qua trang
+        <a
+          href="https://github.com/tunnaduong/everything-about-tunnaduong/issues"
+          target="_blank"
+          >Google Forms</a
+        >
+        nho nhỏ này nhé! ❤️
+      </p>
+    </div>
         <center>
             <div id="header" href="/" hide-nav style="cursor: pointer; width: 400px;">
                 <img src="/static/img/tunnaduong.png" alt="Tunna Duong logo" class="logo" />
