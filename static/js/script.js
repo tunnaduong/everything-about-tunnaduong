@@ -256,48 +256,46 @@ $(window).resize(resizeWidth);
 
 resizeCanvas();
 
-document.addEventListener("DOMContentLoaded", function () {
-  async function sendWriting() {
-    var x = document.forms["form_luubut"]["name"].value;
-    if (x == "") {
-      alert("Hãy điền tên vì trường này rất quan trọng với mình.");
-      return false;
-    }
-
-    if (signaturePad.isEmpty()) {
-      alert("Hãy vẽ chữ ký.");
-      return false;
-    }
-
-    var data = signaturePad.toDataURL("image/png");
-    console.log(data);
-    document.getElementById("dulieu").value = data;
-
-    // Get the Turnstile token
-    var turnstileToken = document.getElementsByName("cf-turnstile-response")[0]
-      .value;
-
-    // Verify the Turnstile token
-    var response = await fetch("/verify-turnstile", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams({ token: turnstileToken }).toString(),
-    });
-
-    var result = await response.json();
-
-    if (result.success) {
-      // If verification is successful, submit the form
-      document.getElementById("form_luubut").submit();
-      return true;
-    } else {
-      // Handle verification failure
-      alert("Vui lòng xác minh rằng bạn không phải là robot.");
-      return false;
-    }
+async function sendWriting() {
+  var x = document.forms["form_luubut"]["name"].value;
+  if (x == "") {
+    alert("Hãy điền tên vì trường này rất quan trọng với mình.");
+    return false;
   }
-  // Attach the sendWriting function to the form submission or a button click
-  document.getElementById("send-btn").addEventListener("click", sendWriting);
-});
+
+  if (signaturePad.isEmpty()) {
+    alert("Hãy vẽ chữ ký.");
+    return false;
+  }
+
+  var data = signaturePad.toDataURL("image/png");
+  console.log(data);
+  document.getElementById("dulieu").value = data;
+
+  // Get the Turnstile token
+  var turnstileToken = document.getElementsByName("cf-turnstile-response")[0]
+    .value;
+
+  // Verify the Turnstile token
+  var response = await fetch("/verify-turnstile", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams({ token: turnstileToken }).toString(),
+  });
+
+  var result = await response.json();
+
+  if (result.success) {
+    // If verification is successful, submit the form
+    document.getElementById("form_luubut").submit();
+    return true;
+  } else {
+    // Handle verification failure
+    alert("Vui lòng xác minh rằng bạn không phải là robot.");
+    return false;
+  }
+}
+// Attach the sendWriting function to the form submission or a button click
+document.getElementById("send-btn").addEventListener("click", sendWriting);
