@@ -35,42 +35,42 @@ class Home extends BaseModel
 
     public function getTop6Projects()
     {
-        $sql = "SELECT * FROM tunnaduong_everything.projects ORDER BY created_at DESC LIMIT 6";
+        $sql = "SELECT * FROM tunnaduong.projects ORDER BY created_at DESC LIMIT 6";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
 
     public function getAllITProjects()
     {
-        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'IT' ORDER BY created_at DESC";
+        $sql = "SELECT * FROM tunnaduong.projects WHERE type = 'IT' ORDER BY created_at DESC";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
 
     public function getAllEngineeringProjects()
     {
-        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'Engineer' ORDER BY created_at DESC";
+        $sql = "SELECT * FROM tunnaduong.projects WHERE type = 'Engineer' ORDER BY created_at DESC";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
 
     public function getAllDesignProjects()
     {
-        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'Design' ORDER BY created_at DESC";
+        $sql = "SELECT * FROM tunnaduong.projects WHERE type = 'Design' ORDER BY created_at DESC";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
 
     public function getAllFilmingProjects()
     {
-        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE type = 'Film' ORDER BY created_at DESC";
+        $sql = "SELECT * FROM tunnaduong.projects WHERE type = 'Film' ORDER BY created_at DESC";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
 
     public function getProject($project_id)
     {
-        $sql = "SELECT * FROM tunnaduong_everything.projects WHERE project_id = '$project_id'";
+        $sql = "SELECT * FROM tunnaduong.projects WHERE project_id = '$project_id'";
         $this->setQuery($sql);
         return $this->loadRow();
     }
