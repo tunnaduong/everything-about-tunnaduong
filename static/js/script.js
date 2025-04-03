@@ -224,10 +224,8 @@ async function getCommitTime() {
   const lastUpdateTime = await getCommit();
 
   lastUpdate.textContent =
-    "Cập nhật lần cuối: " +
     moment(lastUpdateTime)
-      .tz("Asia/Ho_Chi_Minh") // Set to Vietnam timezone (UTC+7)
-      .format("h:mm A, DD/MM/YYYY");
+      .format("MMMM YYYY");
 }
 
 getCommitTime();
