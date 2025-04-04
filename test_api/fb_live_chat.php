@@ -16,7 +16,7 @@ function escapeJsonString($value)
     return $result;
 }
 
-$maychu = "103.81.85.224";
+$maychu = "localhost";
 $tendangnhap = "tunnaduong_fb-live-chat";
 $matkhau = "Tunganh2003";
 $tendb = "tunnaduong_fb-live-chat";
