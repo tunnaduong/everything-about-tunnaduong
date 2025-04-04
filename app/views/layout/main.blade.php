@@ -56,13 +56,13 @@
         cũng có thể xem qua bản thiết kế của trang web này tại:
         <a
           href="https://www.figma.com/file/cHrOJ4ASoJUWielefafzzC/Life-Of-Tunna"
-          target="_blank"
+          target="_blank" external
           >Figma</a
         >
         để dễ hình dung. Và nếu có thể thì cho mình xin một feedback qua trang
         <a
           href="https://forms.gle/BduoqJsY6FLxKzxv7"
-          target="_blank"
+          target="_blank" external
           >Google Forms</a
         >
         nho nhỏ này nhé! ❤️

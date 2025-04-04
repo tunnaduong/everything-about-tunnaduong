@@ -11,7 +11,7 @@
             <div class="section--content">
                 @foreach ($diaries as $diary)
                     <div class="content--card">
-                        <a class=" no-color" href="https://everyday.tunnaduong.com" target="_blank">
+                        <a class=" no-color" href="https://everyday.tunnaduong.com" external target="_blank">
                             <p id="everyday-date-{{ $diary->id }}" class="card--date">
                                 {{ $diary->date }}
                             </p>
@@ -70,7 +70,7 @@
                     <div class="people-details">
                         <img src="./static/img/people/thanhcong.png" alt="Phạm Thành Công" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Phạm Thành Công</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                     <div class="people-details">
                         <img src="./static/img/people/phanducmanh.png" alt="Phan Đức Mạnh" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Phan Đức Mạnh</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                     <div class="people-details">
                         <img src="./static/img/people/luongquangthang.png" alt="Lương Quang Thắng" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Lương Quang Thắng</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <div class="people-details">
                         <img src="./static/img/people/hongquan.png" alt="Đỗ Hồng Quân" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Đỗ Hồng Quân</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                     <div class="people-details">
                         <img src="./static/img/people/haquangthang.png" alt="Hà Quang Thắng" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Hà Quang Thắng</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                     <div class="people-details">
                         <img src="./static/img/people/lelam.png" alt="Lê Hoàng Tùng Lâm" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Lê Hoàng Tùng Lâm</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                     <div class="people-details">
                         <img src="./static/img/people/thienhuong.png" alt="Phạm Thị Thiên Hương" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Phạm Thị Thiên Hương</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                     <div class="people-details">
                         <img src="./static//img/people/buihien.png" alt="Bùi Thu Hiền" />
                         <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
+                            <p class="details--name">Bùi Thu Hiền</p>
                             <p class="details--summary">3 kỉ niệm cùng nhau</p>
                         </div>
                     </div>
