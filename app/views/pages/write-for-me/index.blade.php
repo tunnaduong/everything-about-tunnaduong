@@ -82,7 +82,7 @@
                 </div>
                 <div class="mt-3">
                     <div class="cf-turnstile" data-sitekey="0x4AAAAAAAwrQ4yUSma0J-NO"></div>
-                    <a id="send-btn" class="btn">Gửi <i class="fas fa-paper-plane"></i></a>
+                    <a id="send-btn" onclick="sendWriting()" class="btn">Gửi <i class="fas fa-paper-plane"></i></a>
                 </div>
             </form>
         @endif
@@ -118,7 +118,6 @@ $(window).resize(resizeWidth);
 
 resizeCanvas();
 
-document.addEventListener("DOMContentLoaded", function () {
     async function sendWriting() {
         var x = document.forms["form_luubut"]["name"].value;
         if (x == "") {
@@ -138,8 +137,5 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("form_luubut").submit();
         return true;
     }
-    // Attach the sendWriting function to the form submission or a button click
-    document.getElementById("send-btn").addEventListener("click", sendWriting);
-});
 </script>
 @endpush

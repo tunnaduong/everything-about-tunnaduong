@@ -24,7 +24,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="/projects/{{ $project->project_id }}"
+                                <a href="/what-i-do/projects/{{ $project->project_id }}"
                                     class="text-[var(--black)] flex items-center group">Xem
                                     chi
                                     tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -64,7 +64,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="/projects/{{ $project->project_id }}"
+                                <a href="/what-i-do/projects/{{ $project->project_id }}"
                                     class="text-[var(--black)] flex items-center group">Xem
                                     chi
                                     tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -104,7 +104,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="/projects/{{ $project->project_id }}"
+                                <a href="/what-i-do/projects/{{ $project->project_id }}"
                                     class="text-[var(--black)] flex items-center group">Xem
                                     chi
                                     tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -144,7 +144,7 @@
                                 </p>
                             </div>
                             <div class="flex justify-end">
-                                <a href="/projects/{{ $project->project_id }}"
+                                <a href="/what-i-do/projects/{{ $project->project_id }}"
                                     class="text-[var(--black)] flex items-center group">Xem
                                     chi
                                     tiết<svg stroke="currentColor" fill="currentColor" stroke-width="0"
