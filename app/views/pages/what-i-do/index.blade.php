@@ -12,7 +12,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 @foreach ($projects as $project)
                     <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                        <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}" class="aspect-video object-cover">
+                        <img src="{{ $project->thumbnail }}" loading="lazy" alt="{{ $project->name }}" class="aspect-video object-cover">
                         <div class="p-4 flex flex-col gap-2 justify-between h-full">
                             <div>
                                 <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">{{ $project->name }}
@@ -52,7 +52,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 @foreach ($engineering_projects as $project)
                     <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                        <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}" class="aspect-video object-cover">
+                        <img src="{{ $project->thumbnail }}" loading="lazy" alt="{{ $project->name }}" class="aspect-video object-cover">
                         <div class="p-4 flex flex-col gap-2 justify-between h-full">
                             <div>
                                 <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">{{ $project->name }}
@@ -92,7 +92,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 @foreach ($design_projects as $project)
                     <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                        <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}" class="aspect-video object-cover">
+                        <img src="{{ $project->thumbnail }}" loading="lazy" alt="{{ $project->name }}" class="aspect-video object-cover">
                         <div class="p-4 flex flex-col gap-2 justify-between h-full">
                             <div>
                                 <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">{{ $project->name }}
@@ -132,7 +132,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 @foreach ($filming_projects as $project)
                     <div class="bg-[var(--content-bg)] transition-all duration-300 flex flex-col gap-2 overflow-hidden">
-                        <img src="{{ $project->thumbnail }}" alt="{{ $project->name }}" class="aspect-video object-cover">
+                        <img src="{{ $project->thumbnail }}" loading="lazy" alt="{{ $project->name }}" class="aspect-video object-cover">
                         <div class="p-4 flex flex-col gap-2 justify-between h-full">
                             <div>
                                 <h2 class="font-semibold text-lg line-clamp-2 text-[var(--black)]">{{ $project->name }}
