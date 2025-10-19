@@ -15,7 +15,7 @@
             </p>
         </div>
         <div class="w-60 md:w-1/2 order-1 md:order-2 mb-12 md:mb-0">
-            <div class="bg-slate-500 rounded-full overflow-hidden border-8 border-secondary-dark">
+            <div class="bg-[#f3e8d3] rounded-full overflow-hidden border-8 border-white dark:!bg-[#222222]">
                 <img alt="Avatar" width="540" height="540" class="scale-105 align-top drop-shadow-xl"
                     style="color:transparent" src="/static/img/transparent_tunna.png" alt="A Transparent Tunna">
             </div>
@@ -272,11 +272,20 @@
         </div>
     </section>
     <section class="w-full md:mt-0 px-6 md:px-8 mb-16">
-        <div class="max-w-screen-lg m-auto">
+        <div class="max-w-screen-lg m-auto mb-10 flex justify-between items-center">
             <h3
-                class="text-[var(--black)] font-light text-3xl tracking-[6px] uppercase relative transition-all duration-300 mb-10 before:absolute before:-bottom-[5px] before:left-0 before:h-[1px] before:content-[''] before:w-[60px] before:bg-[var(--black)] after:absolute after:-bottom-[7px] after:right-0 after:left-[56px] after:w-[6px] after:h-[6px] after:rounded-full after:bg-[var(--black)]">
+                class="w-fit inline-block text-[var(--black)] font-light text-3xl tracking-[6px] uppercase relative transition-all duration-300 before:absolute before:-bottom-[5px] before:left-0 before:h-[1px] before:content-[''] before:w-[60px] before:bg-[var(--black)] after:absolute after:-bottom-[7px] after:right-0 after:left-[56px] after:w-[6px] after:h-[6px] after:rounded-full after:bg-[var(--black)]">
                 Dự án gần đây
             </h3>
+            <a href="/what-i-do" class="text-[var(--black)] flex items-center group">Xem tất cả
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 512"
+                    class="text-lg group-hover:translate-x-1 transition-all duration-100" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
+                    </path>
+                </svg>
+            </a>
         </div>
         <div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -312,6 +321,13 @@
                     </div>
                 @endforeach
             </div>
+        </div>
+        <div class="flex justify-center mt-10">
+            <a newtab href="https://cv.tunnaduong.com" class="text-[var(--black)] flex items-center group">Cảm
+                thấy tò mò? Xem CV
+                của mình
+                <i class="fa-solid fa-arrow-up-right-from-square ml-3"></i>
+            </a>
         </div>
     </section>
 @endsection

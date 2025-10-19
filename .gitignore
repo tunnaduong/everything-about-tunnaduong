@@ -1,3 +1,22 @@
 /vendor/
 /storage/
 env.php
+
+# macOS system files
+.DS_Store
+.DS_Store?
+*/.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon?
+Icon?
+
+# Thumbnails
+._*
+
+# macOS metadata
+.Spotlight-V100
+.Trashes
+.fseventsd

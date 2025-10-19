@@ -31,6 +31,11 @@
         <link rel='stylesheet' href='/static/css/nprogress.css' />
         <script src="https://kit.fontawesome.com/be3d8625b2.js" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class'
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425905751761094"
@@ -40,34 +45,23 @@
 
 <body onclick="">
     @if ($rel != 'page')
-    <!-- Construction badge: <img src="./static/img/under-construction.png" class="under-construction-badge" /> -->
-  <img
-      src="/static/img/under-construction.png"
-      class="under-construction-badge"
-      alt="Under construction badge"
-      title="Bạn muốn góp ý cho website? Bấm vào ảnh nhé..."
-    />
-  <!-- Popup alert showing Figma design -->
-  <div id="floating-footer-alert">
-      <span id="alert-close-btn">&times;</span>
-      <h3>👋 Xin chào đằng ấy!</h3>
-      <p>
-        Trang web hiện tại vẫn đang được phát triển và hoàn thiện. Tuy nhiên bạn
-        cũng có thể xem qua bản thiết kế của trang web này tại:
-        <a
-          href="https://www.figma.com/file/cHrOJ4ASoJUWielefafzzC/Life-Of-Tunna"
-          target="_blank" external
-          >Figma</a
-        >
-        để dễ hình dung. Và nếu có thể thì cho mình xin một feedback qua trang
-        <a
-          href="https://forms.gle/BduoqJsY6FLxKzxv7"
-          target="_blank" external
-          >Google Forms</a
-        >
-        nho nhỏ này nhé! ❤️
-      </p>
-    </div>
+        <!-- Construction badge: <img src="./static/img/under-construction.png" class="under-construction-badge" /> -->
+        <img src="/static/img/under-construction.png" class="under-construction-badge" alt="Under construction badge"
+            title="Bạn muốn góp ý cho website? Bấm vào ảnh nhé..." />
+        <!-- Popup alert showing Figma design -->
+        <div id="floating-footer-alert">
+            <span id="alert-close-btn">&times;</span>
+            <h3>👋 Xin chào đằng ấy!</h3>
+            <p>
+                Trang web hiện tại vẫn đang được phát triển và hoàn thiện. Tuy nhiên bạn
+                cũng có thể xem qua bản thiết kế của trang web này tại:
+                <a href="https://www.figma.com/file/cHrOJ4ASoJUWielefafzzC/Life-Of-Tunna" target="_blank"
+                    external>Figma</a>
+                để dễ hình dung. Và nếu có thể thì cho mình xin một feedback qua trang
+                <a href="https://forms.gle/BduoqJsY6FLxKzxv7" target="_blank" external>Google Forms</a>
+                nho nhỏ này nhé! ❤️
+            </p>
+        </div>
         <center>
             <div id="header" href="/" hide-nav style="cursor: pointer; width: 400px;">
                 <img src="/static/img/tunnaduong.png" alt="Tunna Duong logo" class="logo" />

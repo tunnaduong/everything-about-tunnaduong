@@ -69,8 +69,10 @@ if (currentTheme) {
     console.log("it happend2");
     toggleSwitch.checked = true;
     document.documentElement.setAttribute("data-theme", "dark");
+    document.body.classList.add("dark");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
+    document.body.classList.remove("dark");
     toggleSwitch.checked = false;
   }
 } else {
@@ -81,8 +83,10 @@ if (currentTheme) {
     // dark mode is detected
     document.documentElement.setAttribute("data-theme", "dark");
     toggleSwitch.checked = true;
+    document.body.classList.add("dark");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
+    document.body.classList.remove("dark");
     toggleSwitch.checked = false;
   }
 }
@@ -91,9 +95,11 @@ function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
+    document.body.classList.add("dark");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
+    document.body.classList.remove("dark");
   }
 }
 
@@ -177,6 +183,12 @@ $("html").on("click", "[external]", function (e) {
   go(url);
 });
 
+$("html").on("click", "[newtab]", function (e) {
+  e.preventDefault(); // cancel click
+  var url = $(this).attr("href");
+  window.open(url, "_blank");
+});
+
 $("html").on("click", "[href]", function (e) {
   e.preventDefault(); // cancel click
   var url = $(this).attr("href");
@@ -223,9 +235,7 @@ async function getCommitTime() {
   const lastUpdate = document.querySelector("#last_updated");
   const lastUpdateTime = await getCommit();
 
-  lastUpdate.textContent =
-    moment(lastUpdateTime)
-      .format("MMMM YYYY");
+  lastUpdate.textContent = moment(lastUpdateTime).format("MMMM YYYY");
 }
 
 getCommitTime();
