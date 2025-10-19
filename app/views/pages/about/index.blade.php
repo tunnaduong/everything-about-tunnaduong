@@ -33,10 +33,12 @@
                 </h3>
                 <h3 class="text-[var(--black)] text-xl md:text-3xl font-medium mb-6">Kỹ năng</h3>
                 <ul class="text-[var(--black)] leading-7 list-disc ml-8">
-                    <li><span class="font-bold">Ngôn ngữ lập trình: </span><span>Javascript, PHP, HTML, CSS</span></li>
+                    <li><span class="font-bold">Ngôn ngữ lập trình: </span><span>PHP, HTML, CSS, Javascript, C/C++, Java,
+                            Python, MySQL, PostgreSQL</span></li>
                     <li><span class="font-bold">Thư viện và framework: </span><span>ReactJS, React Native, TailwindCSS,
-                            Laravel, NodeJS, ExpressJS
-                    <li><span class="font-bold">Công cụ: </span><span>Git, Github, Nginx, MySQL, Cloudflare
+                            Laravel, NodeJS, ExpressJS, Bootstrap, jQuery, VueJS
+                    <li><span class="font-bold">Công cụ: </span><span>Git/GitHub, GitHub Actions, Vercel, Cloudflare, Google
+                            Cloud, AWS, Azure, Docker, Postman, Figma, Photoshop, Illustrator, Premiere Pro
                 </ul>
             </div>
         </div>
@@ -49,10 +51,60 @@
                             class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
                             <h4
                                 class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Wistron Infocomm Việt Nam</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                06/2025 - 09/2025</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">IT Maintenance &
+                                Operations Intern - Digital Manufacturing Department</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Giám sát và bảo trì hệ thống quản lý sản xuất WiMES nhằm đảm bảo hoạt động ổn định của
+                                    dây chuyền.</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Xử lý sự cố hệ thống và cơ sở dữ liệu PostgreSQL liên quan đến dây chuyền và đơn hàng.
+                                </li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Hỗ trợ nhóm kỹ thuật khắc phục sự cố và nâng cao độ tin cậy của hệ thống.
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Viettel Hà Nam</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                03/2025 - 06/2025</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">IT Support Intern -
+                                Business Solutions Department</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Củng cố kiến thức chuyên ngành CNTT, rèn luyện kỹ năng kiểm thử phần mềm, đọc hiểu
+                                    nghiệp vụ hệ thống, và hỗ trợ người dùng.</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Quan sát và học hỏi quy trình phối hợp giữa đơn vị triển khai và phát triển, đóng vai
+                                    trò cầu nối giữa kỹ thuật và người sử dụng.</li>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Phát triển kỹ năng mềm, làm việc nhóm và tư duy thực tế trong môi trường doanh nghiệp.
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
                                 VNTEL</h4>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
-                                01/2022 - 05/2022</p>
+                                01/2022 - 06/2022</p>
                             <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Front-end Developer</p>
                             <ul>
                                 <li
@@ -158,6 +210,59 @@
                             class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
                             <h4
                                 class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                AI4LIFE Hackathon 2025</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                08/2025</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Giải nhì</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải nhì trong cuộc thi AI4LIFE Hackathon 2025 dành cho sinh viên trường FPT
+                                    Polytechnic Miền Bắc
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Bậc thầy săn bug - Bug Slayer 2025</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                04/2025</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Giải triển vọng</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải triển vọng trong cuộc thi Bậc thầy săn bug - Bug Slayer 2025 dành cho sinh viên
+                                    trường FPT
+                                    Polytechnic Miền Bắc
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
+                                Cuộc thi Tiếng Anh - My Poly 2024</h4>
+                            <p
+                                class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
+                                11/2024</p>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Giải tiềm năng</p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải tiềm năng trong cuộc thi Cuộc thi Tiếng Anh - My Poly 2024 dành cho sinh viên
+                                    trường FPT
+                                    Polytechnic Miền Bắc
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="pb-10 relative border-l-2 pl-4 border-[var(--black)] before:absolute before:content-[''] before:-left-[9px] before:top-0 before:w-4 before:h-4 before:bg-[var(--white)] before:border-2 before:border-[var(--black)] before:rounded-full before:transition-all before:duration-300 transition-all duration-300">
+                            <h4
+                                class="text-[var(--black)] text-xl font-semibold mb-3 leading-6 transition-all duration-300">
                                 Quiz Bees 2024 Vòng loại Cơ sở</h4>
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
@@ -218,7 +323,16 @@
                             <ul>
                                 <li
                                     class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
-                                    Đạt giải thưởng Ong vàng học kỳ mùa xuân năm 2024 dành cho sinh viên top 1 của trường
+                                    2 lần đạt giải thưởng Ong vàng học kỳ mùa xuân và mua hè năm 2024 dành cho sinh viên top
+                                    1 của trường
+                                </li>
+                            </ul>
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Danh hiệu Sinh viên Giỏi
+                            </p>
+                            <ul>
+                                <li
+                                    class="relative text-[var(--black)] mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[var(--black)] before:top-2 before:left-0 transition-all duration-300">
+                                    Đạt giải thưởng Sinh viên Giỏi học kỳ mùa xuân năm 2025
                                 </li>
                             </ul>
                         </li>
@@ -235,7 +349,8 @@
                             <p
                                 class="w-fit text-sm mb-3 bg-[var(--black)] text-[var(--white)] inline-block px-2 py-[2px] rounded-md">
                                 04/2022 - 02/2023</p>
-                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Thành viên ban chuyên môn
+                            <p class="mb-2 italic text-[var(--black)] transition-all duration-300">Thành viên ban chuyên
+                                môn
                             </p>
                             <ul>
                                 <li
