@@ -112,6 +112,14 @@
         </div>
         <center>
             <footer>
+                <div class="footer-nav">
+                    <a href="/">TRANG CHỦ</a> -
+                    <a href="/about">GIỚI THIỆU</a> -
+                    <a href="/what-i-do">NHỮNG THỨ MÌNH LÀM</a> -
+                    <a href="/connect-with-me">KẾT NỐI VỚI MÌNH</a> -
+                    <a href="https://forms.gle/qjv83iVfTey5zVTg7" newtab>BÁO LỖI</a> -
+                    <a href="https://c4k60.com/sponsors" newtab>ỦNG HỘ</a>
+                </div>
                 <p class="footer--copyright">
                     <span id="footer--mobile">© 2022-{{ date('Y') }} Duong Tung Anh<br /><span
                             style="color: gray; font-weight: 300; font-size: 15px">All rights reserved</span></span>
