@@ -9,7 +9,7 @@
                 Dương
                 Tùng Anh</h1>
             <p class="text-tertiary dark:text-secondary text-sm lg:text-lg mb-8 text-[var(--black)]">
-                Mình là kỹ sư phần mềm có hơn nửa năm kinh nghiệm và những sản phẩm mình làm ra đều được đầu tư kỹ lưỡng.
+                Mình là kỹ sư phần mềm có hơn một năm kinh nghiệm và những sản phẩm mình làm ra đều được đầu tư kỹ lưỡng.
                 Mình
                 cũng là người năng động trong công việc, không ngừng học hỏi những kỹ năng mới.
             </p>
