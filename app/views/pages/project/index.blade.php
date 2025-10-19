@@ -34,11 +34,11 @@
             @endif
             @if (isset($project->github))
                 <li class="mb-2 ml-4"><span class="font-semibold">GitHub:
-                    </span><a href="{{ $project->github }}" external>{{ $project->github }}</a></li>
+                    </span><a href="{{ $project->github }}" newtab>{{ $project->github }}</a></li>
             @endif
             @if (isset($project->live_site))
                 <li class="mb-2 ml-4"><span class="font-semibold">Demo:
-                    </span><a href="{{ $project->live_site }}" external>{{ $project->live_site }}</a></li>
+                    </span><a href="{{ $project->live_site }}" newtab>{{ $project->live_site }}</a></li>
             @endif
         </ul>
     </div>

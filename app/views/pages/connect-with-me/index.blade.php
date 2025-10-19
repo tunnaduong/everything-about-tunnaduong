@@ -19,27 +19,27 @@
                 <i class="fas fa-envelope"></i>
                 Gửi mail cho mình
             </a>
-            <a href="https://facebook.com/tunna.duong" external id="btn-facebook" class="social-btn uppercase">
+            <a href="https://facebook.com/tunna.duong" newtab id="btn-facebook" class="social-btn uppercase">
                 <i class="fab fa-facebook"></i>
                 Facebook
             </a>
-            <a href="https://instagram.com/tunna.dg" external id="btn-instagram" class="social-btn uppercase">
+            <a href="https://instagram.com/tunna.dg" newtab id="btn-instagram" class="social-btn uppercase">
                 <i class="fab fa-instagram"></i>
                 Instagram
             </a>
-            <a href="https://youtube.com/duongtunganh" external id="btn-youtube" class="social-btn uppercase">
+            <a href="https://youtube.com/duongtunganh" newtab id="btn-youtube" class="social-btn uppercase">
                 <i class="fab fa-youtube"></i>
                 YouTube
             </a>
-            <a href="https://twitter.com/tunnaduong" external id="btn-twitter" class="social-btn uppercase">
+            <a href="https://twitter.com/tunnaduong" newtab id="btn-twitter" class="social-btn uppercase">
                 <i class="fab fa-twitter"></i>
                 Twitter
             </a>
-            <a href="https://github.com/tunna.duong" external id="btn-github" class="social-btn uppercase">
+            <a href="https://github.com/tunna.duong" newtab id="btn-github" class="social-btn uppercase">
                 <i class="fab fa-github"></i>
                 GitHub
             </a>
-            <a href="https://linkedin.com/in/tunganh03" external id="btn-linkedin" class="social-btn uppercase">
+            <a href="https://linkedin.com/in/tunganh03" newtab id="btn-linkedin" class="social-btn uppercase">
                 <i class="fab fa-linkedin"></i>
                 LinkedIn
             </a>

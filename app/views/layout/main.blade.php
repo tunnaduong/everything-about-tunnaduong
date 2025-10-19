@@ -56,9 +56,9 @@
                 Trang web hiện tại vẫn đang được phát triển và hoàn thiện. Tuy nhiên bạn
                 cũng có thể xem qua bản thiết kế của trang web này tại:
                 <a href="https://www.figma.com/file/cHrOJ4ASoJUWielefafzzC/Life-Of-Tunna" target="_blank"
-                    external>Figma</a>
+                    newtab>Figma</a>
                 để dễ hình dung. Và nếu có thể thì cho mình xin một feedback qua trang
-                <a href="https://forms.gle/BduoqJsY6FLxKzxv7" target="_blank" external>Google Forms</a>
+                <a href="https://forms.gle/BduoqJsY6FLxKzxv7" target="_blank" newtab>Google Forms</a>
                 nho nhỏ này nhé! ❤️
             </p>
         </div>
@@ -80,8 +80,8 @@
                     <a href="/what-i-do" hide-nav>Những thứ mình làm</a>
                     <a href="/connect-with-me" hide-nav>Kết nối với mình</a>
                     <a href="/write-for-me" hide-nav>Viết cho mình</a>
-                    <a href="https://forms.gle/qjv83iVfTey5zVTg7" external hide-nav>Báo lỗi</a>
-                    <a href="https://c4k60.com/sponsors" external hide-nav>Ủng hộ</a>
+                    <a href="https://forms.gle/qjv83iVfTey5zVTg7" newtab hide-nav>Báo lỗi</a>
+                    <a href="https://c4k60.com/sponsors" newtab hide-nav>Ủng hộ</a>
                     <span class="version-number">Last updated: <span id="last_updated">October 2024</span></span>
                     <div class="theme-switch-wrapper">
                         <label class="theme-switch" for="checkbox">
