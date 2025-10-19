@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 header("Access-Control-Allow-Origin: *");
 
-include "env.php";
+include "../env.php";
 
 // Database connection parameters
 $host = DBHOST;
