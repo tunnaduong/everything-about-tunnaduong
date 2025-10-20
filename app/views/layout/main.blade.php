@@ -117,6 +117,7 @@
                     <a href="/about">GIỚI THIỆU</a> -
                     <a href="/what-i-do">NHỮNG THỨ MÌNH LÀM</a> -
                     <a href="/connect-with-me">KẾT NỐI VỚI MÌNH</a> -
+                    <a href="/write-for-me">VIẾT CHO MÌNH</a> -
                     <a href="https://forms.gle/qjv83iVfTey5zVTg7" newtab>BÁO LỖI</a> -
                     <a href="https://c4k60.com/sponsors" newtab>ỦNG HỘ</a>
                 </div>

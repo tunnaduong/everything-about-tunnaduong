@@ -106,7 +106,7 @@ class HomeController extends BaseController
       $message .= "💬 Lời nhắn: " . substr($some_lines, 0, 100) . (strlen($some_lines) > 100 ? "..." : "") . "\n";
     }
 
-    $message .= "\n🔗 Xem chi tiết tại: " . $_SERVER['HTTP_HOST'] . "/write-for-me";
+    $message .= "\n🔗 Xem chi tiết tại: http://db.tunnaduong.com/tunna/index.php?route=/sql&db=luubut&table=luubut";
 
     // Send notification via ntfy.sh
     $ch = curl_init();

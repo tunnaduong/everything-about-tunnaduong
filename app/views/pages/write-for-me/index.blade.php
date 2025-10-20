@@ -6,6 +6,7 @@
             <div class="success-message">
                 <i class="fas fa-check-circle text-[var(--black)] text-center text-[40px] block"></i>
                 <h1 class="text-[var(--black)] text-center text-2xl mt-4">Gửi thành công!</h1>
+                <p>Cảm ơn bạn đã viết cho mình. Mình sẽ xem xét sớm nhất có thể.</p>
             </div>
         @else
             <form action="" method="POST" id="form_luubut" class="write-form">
