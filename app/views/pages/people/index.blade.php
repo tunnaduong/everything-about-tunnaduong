@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'Những người đã gặp')
+
 @section('content')
     <div class="main">
         <div class="main--section">

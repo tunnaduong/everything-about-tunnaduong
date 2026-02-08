@@ -78,6 +78,20 @@ body {
   line-height: 38px;
 }
 
+.home-cover {
+  max-width: 980px;
+  margin: 34px auto 0;
+  padding: 0 24px;
+}
+
+.home-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
 /* Deprecated! */
 /* ---------------------------- */
 /* .header--menu {
@@ -1198,7 +1212,7 @@ p {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
   background: white;
   cursor: crosshair;
 }

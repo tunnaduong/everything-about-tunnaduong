@@ -16,6 +16,8 @@
 @endphp
 @extends('layout.main')
 
+@section('title', 'Nhật ký hằng ngày')
+
 @section('content')
     <div class="main">
         <div class="main--section">

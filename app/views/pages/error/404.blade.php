@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'Không tìm thấy')
+
 @section('content')
     <div style="line-height:48px;text-align:center;margin-top: 40px">
         <style>

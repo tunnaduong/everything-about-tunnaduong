@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'Viết cho mình')
+
 @section('content')
     <div class="write-form-container">
         @if (isset($success) && $success)
@@ -102,7 +104,7 @@
 
                 <!-- Row 7: Signature -->
                 <div class="form-row">
-                    <div class="form-group full-width">
+                    <div class="form-group">
                         <label for="signature_box" class="form-label">*Chữ ký của bạn:</label>
                         <div class="signature-container">
                             <canvas class="signature_box" id="signature_box" height="300"
@@ -120,6 +122,9 @@
                             </div>
                         </div>
                         <input type="hidden" name="signature_data" id="dulieu">
+                    </div>
+                    <div class="form-group">
+                        <!-- Empty column for balance -->
                     </div>
                 </div>
 

@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'Dự án')
+
 @section('content')
     <div class="px-6 mt-10 max-w-screen-md my-0 mx-auto">
         <button onclick="history.back();window.scrollTo({ top: 0, behavior: 'smooth' });"

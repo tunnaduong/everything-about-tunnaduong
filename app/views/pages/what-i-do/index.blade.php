@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'Những thứ mình làm')
+
 @section('content')
     <section class="w-full mt-6 px-6 md:px-8 mb-16">
         <div class="max-w-screen-lg m-auto">

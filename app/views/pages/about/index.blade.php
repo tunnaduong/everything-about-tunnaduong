@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'Giới thiệu')
+
 @section('content')
     <div class="px-6 flex flex-col mt-16 md:flex-row items-center justify-center max-w-screen-lg z-10 my-0 mx-auto">
         <div class="md:w-1/2 md:mr-5 order-2 md:order-1 text-center md:text-left">
