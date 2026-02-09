@@ -172,6 +172,16 @@ $(document).ajaxComplete(function () {
   NProgress.done();
 });
 
+function extractPageTitle(data) {
+  var $temp = $("<div>").html(data);
+  var titleFromPage = $temp.find("#page-title").text().trim();
+  if (titleFromPage) {
+    return titleFromPage;
+  }
+  var titleMatch = String(data).match(/<title>([^<]*)<\/title>/i);
+  return titleMatch && titleMatch[1] ? titleMatch[1].trim() : "";
+}
+
 function go(url) {
   window.location.href = url;
 }
@@ -201,7 +211,7 @@ $("html").on("click", "[href]", function (e) {
     success: function (data) {
       window.scrollTo({ top: 0, behavior: "smooth" });
       $("#root").html(data);
-      var newTitle = $("#page-title").text();
+      var newTitle = extractPageTitle(data);
       if (newTitle) {
         document.title = newTitle;
       }
@@ -221,7 +231,7 @@ window.onpopstate = function () {
     url: document.location + "?rel=page",
     success: function (data) {
       $("#root").html(data);
-      var newTitle = $("#page-title").text();
+      var newTitle = extractPageTitle(data);
       if (newTitle) {
         document.title = newTitle;
       }
