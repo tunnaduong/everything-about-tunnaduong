@@ -23,12 +23,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-png" href="/static/img/tunnaduong.png" />
         <title>
-            @if (trim($__env->yieldContent('title')))
+            @if (trim($this->yieldContent('title')))
                 @yield('title') - Tất cả mọi thứ về Tunna Duong
             @else
                 Tất cả mọi thứ về Tunna Duong
             @endif
         </title>
+
+        <!-- Social Media Meta Tags -->
+        <meta property="og:title" content="Tất cả mọi thứ về Tunna Duong" />
+        <meta property="og:description" content="Khám phá thế giới của Tunna Duong - Lập trình viên, Nhà sáng tạo và hơn thế nữa." />
+        <meta property="og:image" content="/static/img/tunna-cover.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tất cả mọi thứ về Tunna Duong" />
+        <meta name="twitter:description" content="Khám phá thế giới của Tunna Duong - Lập trình viên, Nhà sáng tạo và hơn thế nữa." />
+        <meta name="twitter:image" content="/static/img/tunna-cover.png" />
         <link rel="stylesheet" href="/static/css/style.css" />
         <script src="/static/js/jquery.min.js"></script>
         <script src="/static/js/typed.min.js"></script>
@@ -110,6 +122,16 @@
             </div>
         </center>
         <div id="root">
+    @endif
+
+    @if ($rel == 'page')
+        <div id="page-title" style="display: none;">
+            @if (trim($this->yieldContent('title')))
+                @yield('title') - Tất cả mọi thứ về Tunna Duong
+            @else
+                Tất cả mọi thứ về Tunna Duong
+            @endif
+        </div>
     @endif
 
     @yield('content')

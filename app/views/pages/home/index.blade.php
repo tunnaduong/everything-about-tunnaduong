@@ -1,11 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Trang chủ')
-
 @section('content')
-    <div class="home-cover">
-        <img src="/static/img/cover-tunna.svg" alt="Tất cả mọi thứ về Tunna Duong" />
-    </div>
     <div class="main">
         <div class="main--section-1">
             <h1>

@@ -201,6 +201,10 @@ $("html").on("click", "[href]", function (e) {
     success: function (data) {
       window.scrollTo({ top: 0, behavior: "smooth" });
       $("#root").html(data);
+      var newTitle = $("#page-title").text();
+      if (newTitle) {
+        document.title = newTitle;
+      }
     },
   });
 });
@@ -217,6 +221,10 @@ window.onpopstate = function () {
     url: document.location + "?rel=page",
     success: function (data) {
       $("#root").html(data);
+      var newTitle = $("#page-title").text();
+      if (newTitle) {
+        document.title = newTitle;
+      }
     },
   });
 };
@@ -228,7 +236,7 @@ const getCommit = async () => {
     );
     const data = await res.json();
     return data.commit.author.date;
-  } catch (error) {}
+  } catch (error) { }
 };
 
 async function getCommitTime() {
