@@ -27,22 +27,32 @@
         </div>
         <div class="main--section-2">
             <h1>
-                <a href="https://blog.tunnaduong.com" external class="no-color">
-                    Bài viết<br />blog
+                <a href="https://radio.tunnaduong.com" external class="no-color">
+                    Podcast<br />mới ra mắt
                 </a>
             </h1>
             <div class="section--content">
-                @foreach ($blog_posts as $post)
-                    <div class="content--card"">
-                        <a class=" no-color" href=" {{ $post->guid }}" external target="_blank">
-                            <p id="blog-date-{{ $post->ID }}" class="card--date">
-                                {{ $post->post_date }}
+                @if (isset($_GET['debug']))
+                    <div class="content--card">
+                        <p class="card--summary">podcasts_count: {{ is_array($podcasts) ? count($podcasts) : 0 }}</p>
+                        @if (!empty($podcast_debug))
+                            <p class="card--summary" style="white-space: pre-line;">
+                                {{ implode('', $podcast_debug) }}
                             </p>
-                            <p class="card--summary">{{ $post->post_title }}</p>
+                        @endif
+                    </div>
+                @endif
+                @foreach ($podcasts as $podcast)
+                    <div class="content--card"">
+                        <a class=" no-color" href=" {{ $podcast->link }}" external target="_blank">
+                            <p id="podcast-date-{{ $podcast->id }}" class="card--date">
+                                {{ $podcast->pub_date }}
+                            </p>
+                            <p class="card--summary">{{ $podcast->title }}</p>
                         </a>
                     </div>
                     <script>
-                        $("#blog-date-{{ $post->ID }}").text(moment('{{ $post->post_date }}').format(
+                        $("#podcast-date-{{ $podcast->id }}").text(moment('{{ $podcast->pub_date }}').format(
                             'DD/MM/YYYY'));
                     </script>
                 @endforeach
@@ -55,97 +65,22 @@
                 </a>
             </h1>
             <div class="section--content people-i-met">
-                <div class="people-thumb">
-                    <img src="./static/img/people/linhngo.jpg" alt="Ngô Nguyễn Thảo Linh" />
-                    <div class="people-details">
-                        <img src="./static/img/people/linhngo.jpg" alt="Ngô Nguyễn Thảo Linh" />
-                        <div class="details">
-                            <p class="details--name">Ngô Nguyễn Thảo Linh</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
+                @foreach (array_slice($people, 0, 8) as $person)
+                    <a href="/nhung-nguoi-da-gap/{{ $person->slug }}" class="people-thumb no-color">
+                        <img src="{{ $person->avatar }}" alt="{{ $person->name }}" />
+                        <div class="people-details">
+                            <img src="{{ $person->avatar }}" alt="{{ $person->name }}" />
+                            <div class="details">
+                                <p class="details--name">{{ $person->name }}</p>
+                                <p class="details--summary">{{ $person->memories_count }} kỉ niệm cùng nhau</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static/img/people/thanhcong.png" alt="Phạm Thành Công" />
-                    <div class="people-details">
-                        <img src="./static/img/people/thanhcong.png" alt="Phạm Thành Công" />
-                        <div class="details">
-                            <p class="details--name">Phạm Thành Công</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static/img/people/phanducmanh.png" alt="Phan Đức Mạnh" />
-                    <div class="people-details">
-                        <img src="./static/img/people/phanducmanh.png" alt="Phan Đức Mạnh" />
-                        <div class="details">
-                            <p class="details--name">Phan Đức Mạnh</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static/img/people/luongquangthang.png" alt="Lương Quang Thắng" />
-                    <div class="people-details">
-                        <img src="./static/img/people/luongquangthang.png" alt="Lương Quang Thắng" />
-                        <div class="details">
-                            <p class="details--name">Lương Quang Thắng</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static/img/people/hongquan.png" alt="Đỗ Hồng Quân" />
-                    <div class="people-details">
-                        <img src="./static/img/people/hongquan.png" alt="Đỗ Hồng Quân" />
-                        <div class="details">
-                            <p class="details--name">Đỗ Hồng Quân</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static/img/people/haquangthang.png" alt="Hà Quang Thắng" />
-                    <div class="people-details">
-                        <img src="./static/img/people/haquangthang.png" alt="Hà Quang Thắng" />
-                        <div class="details">
-                            <p class="details--name">Hà Quang Thắng</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static/img/people/lelam.png" alt="Lê Hoàng Tùng Lâm" />
-                    <div class="people-details">
-                        <img src="./static/img/people/lelam.png" alt="Lê Hoàng Tùng Lâm" />
-                        <div class="details">
-                            <p class="details--name">Lê Hoàng Tùng Lâm</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static/img/people/thienhuong.png" alt="Phạm Thị Thiên Hương" />
-                    <div class="people-details">
-                        <img src="./static/img/people/thienhuong.png" alt="Phạm Thị Thiên Hương" />
-                        <div class="details">
-                            <p class="details--name">Phạm Thị Thiên Hương</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-thumb">
-                    <img src="./static//img/people/buihien.png" alt="Bùi Thu Hiền" />
-                    <div class="people-details">
-                        <img src="./static//img/people/buihien.png" alt="Bùi Thu Hiền" />
-                        <div class="details">
-                            <p class="details--name">Bùi Thu Hiền</p>
-                            <p class="details--summary">3 kỉ niệm cùng nhau</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="additional-number">+26</div>
+                    </a>
+                @endforeach
+                @if (count($people) > 8)
+                    <div id="additional-number" class="pointer" onclick="window.location.href='/nhung-nguoi-da-gap'">
+                        +{{ count($people) - 8 }}</div>
+                @endif
             </div>
         </div>
         <div class="main--section-4">
