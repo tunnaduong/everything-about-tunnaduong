@@ -15,6 +15,7 @@ try {
     $router->get("/nhat-ky-hang-ngay", [App\Controllers\HomeController::class, 'everyday']);
 
     $router->get("/nhung-nguoi-da-gap", [App\Controllers\HomeController::class, 'people']);
+    $router->get("/nhung-nguoi-da-gap/{name}", [App\Controllers\HomeController::class, 'person_detail']);
 
     $router->get("/about", [App\Controllers\HomeController::class, 'about']);
 

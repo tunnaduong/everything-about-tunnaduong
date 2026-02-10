@@ -40,7 +40,7 @@ $("#typed").typed({
   strings: [
     "Tất cả mọi thứ về",
     "Nhật ký hằng ngày của",
-    "Bài viết blog của",
+    "Podcast mới ra mắt của",
     "Những người bạn của",
     "Mọi người nghĩ gì về",
     "Cảm nghĩ về mọi người của",

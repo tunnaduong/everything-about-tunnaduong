@@ -16,26 +16,48 @@ class HomeController extends BaseController
   public function index()
   {
     $diaries = $this->home->getDiary();
-    $blog_posts = $this->home->getBlog();
-    return $this->render("pages.home.index", compact("diaries", "blog_posts"));
+    $podcasts = $this->home->getPodcasts();
+    $podcast_debug = $this->home->getPodcastDebug();
+
+    $people = $this->home->getPeople('recent', 'all');
+    foreach ($people as $person) {
+      $person->slug = $this->home->slugify($person->name);
+    }
+
+    return $this->render('pages.home.index', compact('diaries', 'podcasts', 'podcast_debug', 'people'));
   }
 
   public function about()
   {
     $projects = $this->home->getTop6Projects();
-    return $this->render("pages.about.index", compact("projects"));
+    return $this->render('pages.about.index', compact('projects'));
   }
 
   public function everyday()
   {
     $diaries = $this->home->getEveryday();
-    return $this->render("pages.diary.index", compact("diaries"));
+    return $this->render('pages.diary.index', compact('diaries'));
   }
 
   public function people()
   {
-    $people = $this->home->getPeople();
-    return $this->render("pages.people.index", compact("people"));
+    $sort = $_GET['sort'] ?? 'recent';
+    $context = $_GET['context'] ?? 'all';
+    $people = $this->home->getPeople($sort, $context);
+    foreach ($people as $person) {
+      $person->slug = $this->home->slugify($person->name);
+    }
+    return $this->render('pages.people.index', compact('people', 'sort', 'context'));
+  }
+
+  public function person_detail($name)
+  {
+    $person = $this->home->getPersonBySlug($name);
+    if (!$person) {
+      return $this->error404();
+    }
+    $memories = $this->home->getMemoriesByPersonId($person->id);
+    return $this->render('pages.people.detail', compact('person', 'memories'));
   }
 
   public function project($project_id)
@@ -45,7 +67,7 @@ class HomeController extends BaseController
     if (!$project) {
       return $this->error404();
     }
-    return $this->render("pages.project.index", compact("project"));
+    return $this->render('pages.project.index', compact('project'));
   }
 
   public function what_i_do()
@@ -54,12 +76,12 @@ class HomeController extends BaseController
     $engineering_projects = $this->home->getAllEngineeringProjects();
     $design_projects = $this->home->getAllDesignProjects();
     $filming_projects = $this->home->getAllFilmingProjects();
-    return $this->render('pages.what-i-do.index', compact("projects", "engineering_projects", "design_projects", "filming_projects"));
+    return $this->render('pages.what-i-do.index', compact('projects', 'engineering_projects', 'design_projects', 'filming_projects'));
   }
 
   public function connect_with_me()
   {
-    return $this->render("pages.connect-with-me.index");
+    return $this->render('pages.connect-with-me.index');
   }
 
   public function write_for_me()
@@ -69,8 +91,8 @@ class HomeController extends BaseController
       $email = $_POST['email'];
       $come_from = $_POST['come_from'];
       $web = $_POST['web'];
-      $gender = $_POST['gender'] ?? "";
-      $have_we_met = $_POST['have_we_met'] ?? "";
+      $gender = $_POST['gender'] ?? '';
+      $have_we_met = $_POST['have_we_met'] ?? '';
       $why_we_met = $_POST['why_we_met'];
       $our_memory = $_POST['our_memory'];
       $i_am = $_POST['i_am'];
@@ -84,26 +106,26 @@ class HomeController extends BaseController
       // Send notification to ntfy.sh
       $this->sendNtfyNotification($name, $email, $come_from, $some_lines);
 
-      return $this->render("pages.write-for-me.index", ["success" => true]);
+      return $this->render('pages.write-for-me.index', ['success' => true]);
     }
-    return $this->render("pages.write-for-me.index");
+    return $this->render('pages.write-for-me.index');
   }
 
   private function sendNtfyNotification($name, $email, $come_from, $some_lines)
   {
     $message = "📝 Có người viết cho bạn!\n\n";
-    $message .= "👤 Tên: " . $name . "\n";
+    $message .= '👤 Tên: ' . $name . "\n";
 
     if (!empty($email)) {
-      $message .= "📧 Email: " . $email . "\n";
+      $message .= '📧 Email: ' . $email . "\n";
     }
 
     if (!empty($come_from)) {
-      $message .= "📍 Đến từ: " . $come_from . "\n";
+      $message .= '📍 Đến từ: ' . $come_from . "\n";
     }
 
     if (!empty($some_lines)) {
-      $message .= "💬 Lời nhắn: " . substr($some_lines, 0, 100) . (strlen($some_lines) > 100 ? "..." : "") . "\n";
+      $message .= '💬 Lời nhắn: ' . substr($some_lines, 0, 100) . (strlen($some_lines) > 100 ? '...' : '') . "\n";
     }
 
     $message .= "\n🔗 Xem chi tiết tại: http://db.tunnaduong.com/tunna/index.php?route=/sql&db=luubut&table=luubut";
@@ -127,11 +149,11 @@ class HomeController extends BaseController
     curl_close($ch);
 
     // Log the result (optional)
-    error_log("Ntfy notification sent. HTTP Code: " . $httpCode . ", Result: " . $result);
+    error_log('Ntfy notification sent. HTTP Code: ' . $httpCode . ', Result: ' . $result);
   }
 
   public function error404()
   {
-    return $this->render("pages.error.404");
+    return $this->render('pages.error.404');
   }
 }
