@@ -337,7 +337,7 @@ footer {
   background-color: var(--black);
   border-radius: 50%;
   position: absolute;
-  transform: translateX(-47px) translateY(12px);
+  transform: translateX(-37px) translateY(12px);
 }
 
 .date-dot--inner {
@@ -362,7 +362,7 @@ footer {
 .card--date-2 {
   min-width: 150px;
   position: absolute;
-  transform: translateX(-204px) translateY(10px);
+  transform: translateX(-200px) translateY(10px);
   text-align: right;
 }
 

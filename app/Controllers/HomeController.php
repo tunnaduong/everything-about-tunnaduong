@@ -84,6 +84,7 @@ class HomeController extends BaseController
     return $this->render('pages.connect-with-me.index');
   }
 
+
   public function write_for_me()
   {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
